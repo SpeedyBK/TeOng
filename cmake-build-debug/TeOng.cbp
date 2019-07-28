@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TeOng"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\sfml\;CMake Files\..\..\sfml\lib\;CMake Files\..\..\sfml\lib\cmake\;CMake Files\..\..\sfml\lib\cmake\SFML\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TeOng">
+				<Option output="/home/benjamin/CLionProjects/TeOng/cmake-build-debug/TeOng" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/benjamin/CLionProjects/TeOng/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/benjamin/sfml/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 TeOng"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TeOng/fast">
+				<Option output="/home/benjamin/CLionProjects/TeOng/cmake-build-debug/TeOng" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/benjamin/CLionProjects/TeOng/SFML_INCLUDE_DIR"/>
+					<Add directory="/home/benjamin/sfml/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 TeOng/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Ball.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Pong.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Pong.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Racket.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Racket.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/main.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

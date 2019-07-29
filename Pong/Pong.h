@@ -25,8 +25,8 @@ public:
 private:
 
     Ball ball;
-    Racket racketA;
-    Racket racketB;
+    Racket racketA = Racket('A');
+    Racket racketB = Racket('B');
     sf::Music music;
     sf::SoundBuffer wall;
     sf::SoundBuffer racket;

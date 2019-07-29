@@ -59,8 +59,8 @@ void Pong::GameLoop() {
         ball.CalcVelo();
         ball.PosCalc();
         PlayBall.setPosition(ball.getXPos(), ball.getYPos());
-        racketA.setPosition(ball.getYPos() - 30);
-        racketB.setPosition(ball.getYPos() - 30);
+        racketA.calcPosition();
+        racketB.calcPosition();
         RacketA.setPosition(10, racketA.getPosition());
         RacketB.setPosition(width - 30, racketB.getPosition());
         ball.setHitType(Pong::DetectHit(ball.getXPos(), ball.getYPos(), racketA.getPosition(), racketB.getPosition()));

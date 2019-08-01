@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
+#include <SFML/Window.hpp>
 
 #ifndef TEONG_TETRIS_H
 #define TEONG_TETRIS_H
@@ -19,7 +21,17 @@ public:
 
 private:
 
+    int width;
+    int height;
+
+    int PlayingField [18][10];
+    int offset = 40;
+
+    sf::Texture t;
+    sf::Sprite s;
+
     sf::Music music;
+
 
 };
 

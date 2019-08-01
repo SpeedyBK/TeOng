@@ -204,6 +204,33 @@ Pong/Racket.cpp.s:
 	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Pong/Racket.cpp.s
 .PHONY : Pong/Racket.cpp.s
 
+Tetris/Stones.o: Tetris/Stones.cpp.o
+
+.PHONY : Tetris/Stones.o
+
+# target to build an object file
+Tetris/Stones.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o
+.PHONY : Tetris/Stones.cpp.o
+
+Tetris/Stones.i: Tetris/Stones.cpp.i
+
+.PHONY : Tetris/Stones.i
+
+# target to preprocess a source file
+Tetris/Stones.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Tetris/Stones.cpp.i
+.PHONY : Tetris/Stones.cpp.i
+
+Tetris/Stones.s: Tetris/Stones.cpp.s
+
+.PHONY : Tetris/Stones.s
+
+# target to generate assembly for a file
+Tetris/Stones.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Tetris/Stones.cpp.s
+.PHONY : Tetris/Stones.cpp.s
+
 Tetris/Tetris.o: Tetris/Tetris.cpp.o
 
 .PHONY : Tetris/Tetris.o
@@ -276,6 +303,9 @@ help:
 	@echo "... Pong/Racket.o"
 	@echo "... Pong/Racket.i"
 	@echo "... Pong/Racket.s"
+	@echo "... Tetris/Stones.o"
+	@echo "... Tetris/Stones.i"
+	@echo "... Tetris/Stones.s"
 	@echo "... Tetris/Tetris.o"
 	@echo "... Tetris/Tetris.i"
 	@echo "... Tetris/Tetris.s"

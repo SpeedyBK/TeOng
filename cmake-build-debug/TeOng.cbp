@@ -106,6 +106,12 @@
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Racket.h">
 			<Option target="TeOng"/>
 		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Stones.h">
+			<Option target="TeOng"/>
+		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp">
 			<Option target="TeOng"/>
 		</Unit>

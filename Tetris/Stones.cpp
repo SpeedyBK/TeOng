@@ -45,3 +45,13 @@ void Stones::move(int lr) {
         }
     }
 }
+
+float Stones::down(float timer, float delay) {
+    if (timer > delay){
+        for (int i = 0; i < 4; i++){
+            a[i].y += 1;
+            timer = 0;
+        }
+    }
+    return timer;
+}

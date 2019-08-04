@@ -35,6 +35,11 @@ private:
 
     sf::Music music;
 
+    sf::Clock clock;
+    float delay = 0.3f;
+    float timer = 0.f;
+    float time;
+
 };
 
 

@@ -48,6 +48,10 @@ void Tetris::GameLoop() {
 
     while (window.isOpen()) {
 
+        time = clock.getElapsedTime().asSeconds();
+        clock.restart();
+        timer+=time;
+
         sf::Event event;
 
         while (window.pollEvent(event)) {
@@ -64,6 +68,9 @@ void Tetris::GameLoop() {
                 }
             }
         }
+
+        timer = Stone.down(timer, delay);
+
         window.clear(sf::Color::White);
         window.draw(line);
         for (int i = 0; i < 4; i++){

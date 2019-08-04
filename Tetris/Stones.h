@@ -13,6 +13,8 @@ public:
     explicit Stones(int Stonetype);
     void rotate ();
     void move(int lr);
+    float down(float timer, float delay);
+
 
     struct Stone {
         int x;

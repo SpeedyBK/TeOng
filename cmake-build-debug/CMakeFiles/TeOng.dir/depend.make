@@ -151,6 +151,7 @@ CMakeFiles/TeOng.dir/Pong/Racket.cpp.o: /home/benjamin/sfml/include/SFML/Window/
 CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o: ../Tetris/Stones.cpp
 CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o: ../Tetris/Stones.h
 
+CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o: ../Tetris/Stones.h
 CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o: ../Tetris/Tetris.cpp
 CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o: ../Tetris/Tetris.h
 CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o: /home/benjamin/sfml/include/SFML/Audio.hpp
@@ -249,6 +250,7 @@ CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o: /home/benjamin/sfml/include/SFML/Windo
 CMakeFiles/TeOng.dir/main.cpp.o: ../Pong/Ball.h
 CMakeFiles/TeOng.dir/main.cpp.o: ../Pong/Pong.h
 CMakeFiles/TeOng.dir/main.cpp.o: ../Pong/Racket.h
+CMakeFiles/TeOng.dir/main.cpp.o: ../Tetris/Stones.h
 CMakeFiles/TeOng.dir/main.cpp.o: ../Tetris/Tetris.h
 CMakeFiles/TeOng.dir/main.cpp.o: ../main.cpp
 CMakeFiles/TeOng.dir/main.cpp.o: /home/benjamin/sfml/include/SFML/Audio.hpp

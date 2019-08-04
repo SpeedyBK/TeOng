@@ -5,13 +5,19 @@
 #ifndef TEONG_STONES_H
 #define TEONG_STONES_H
 
-
 class Stones {
 
 public:
 
     Stones();
     explicit Stones(int Stonetype);
+    void rotate ();
+    void move(int lr);
+
+    struct Stone {
+        int x;
+        int y;
+    } a[4], b[4];
 
 private:
 
@@ -24,7 +30,7 @@ private:
                              {2, 3, 4, 5}, // O
                             };
 
-    int StoneArray[4];
+    int start;
 
 };
 

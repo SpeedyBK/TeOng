@@ -4,6 +4,7 @@
 
 #include "Tetris.h"
 
+
 Tetris::Tetris(){
     std::cout << "Tetris is running... " << std::endl;
 
@@ -52,15 +53,30 @@ void Tetris::GameLoop() {
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
+
+            if (event.type == sf::Event::KeyPressed) {
+                if (event.key.code == sf::Keyboard::Up){
+                    Stone.rotate();
+                }else if (event.key.code == sf::Keyboard::Left){
+                    Stone.move(-1);
+                }else if (event.key.code == sf::Keyboard::Right){
+                    Stone.move(1);
+                }
+            }
         }
         window.clear(sf::Color::White);
         window.draw(line);
-        for (int i = 0; i < 18; i++){
-            for (int j = 0; j < 10; j++){
-                s.setPosition(j*40, offset + i*40);
-                window.draw(s);
-            }
+        for (int i = 0; i < 4; i++){
+            s.setPosition(Stone.a[i].x * 40, Stone.a[i].y * 40);
+            window.draw(s);
         }
+
+
+        /*for (int i = 0; i < 18; i++){
+            for (int j = 0; j < 10; j++){
+
+            }
+        }*/
         window.display();
     }
 }

@@ -152,6 +152,7 @@ CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o
  /home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp
  /home/benjamin/CLionProjects/TeOng/Tetris/Stones.h
 CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o
+ /home/benjamin/CLionProjects/TeOng/Tetris/Stones.h
  /home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp
  /home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h
  /home/benjamin/sfml/include/SFML/Audio.hpp
@@ -250,6 +251,7 @@ CMakeFiles/TeOng.dir/main.cpp.o
  /home/benjamin/CLionProjects/TeOng/Pong/Ball.h
  /home/benjamin/CLionProjects/TeOng/Pong/Pong.h
  /home/benjamin/CLionProjects/TeOng/Pong/Racket.h
+ /home/benjamin/CLionProjects/TeOng/Tetris/Stones.h
  /home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h
  /home/benjamin/CLionProjects/TeOng/main.cpp
  /home/benjamin/sfml/include/SFML/Audio.hpp

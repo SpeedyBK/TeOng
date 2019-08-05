@@ -43,6 +43,8 @@ private:
     Stones firstStone = Stones(1);
     std::vector<Stones> StonesVec;
 
+    std::vector <int> RandVec;
+
     sf::Texture t;
     sf::Sprite s;
 

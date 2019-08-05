@@ -49,6 +49,7 @@ void Tetris::GameLoop() {
     line.setFillColor(sf::Color::Red);
 
     StonesVec.push_back(firstStone);
+    RandVec.push_back(4);
 
     while (window.isOpen()) {
 
@@ -82,6 +83,7 @@ void Tetris::GameLoop() {
         for (int j = 0; j < StonesVec.size(); j++) {
             for (int i = 0; i < 4; i++) {
                 s.setPosition(StonesVec[j].a[i].x * 40, StonesVec[j].a[i].y * 40);
+                s.setTextureRect(sf::IntRect((RandVec[j]%5)*40,0,40,40));
                 window.draw(s);
             }
         }
@@ -124,8 +126,8 @@ void Tetris::CreateNewStone() {
         //TetrisDebug();
         int Random = RandomGen();
         Stones NewStone = Stones(Random);
-        s.setTextureRect(sf::IntRect((Random%5)*40,0,40,40));
         StonesVec.push_back(NewStone);
+        RandVec.push_back(Random);
     }
 }
 

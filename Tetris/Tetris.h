@@ -7,6 +7,9 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include "Stones.h"
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 #ifndef TEONG_TETRIS_H
 #define TEONG_TETRIS_H
@@ -18,6 +21,14 @@ public:
 
     Tetris();
 
+    bool CheckBottom();
+
+    void CreateNewStone();
+
+    void TetrisDebug();
+
+    int RandomGen();
+
     void GameLoop();
 
 private:
@@ -25,10 +36,12 @@ private:
     int width;
     int height;
 
-    int PlayingField [18][10];
+    bool PlayingField [18][10];
     int offset = 40;
+    bool check = false;
 
-    Stones Stone = Stones(2);
+    Stones firstStone = Stones(1);
+    std::vector<Stones> StonesVec;
 
     sf::Texture t;
     sf::Sprite s;
@@ -38,7 +51,7 @@ private:
     sf::Clock clock;
     float delay = 0.3f;
     float timer = 0.f;
-    float time;
+    float timex;
 
 };
 

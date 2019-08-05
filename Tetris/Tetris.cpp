@@ -14,7 +14,7 @@ Tetris::Tetris(){
     std::cout << "Creating Playing Field... " << std::endl;
     for (int i = 0; i < 18; i++ ){
         for (int j = 0; j < 10; j++){
-            PlayingField[i][j] = 0;
+            PlayingField[i][j] = false;
         }
     }
 
@@ -36,6 +36,8 @@ Tetris::Tetris(){
     music.setLoop(true);
     music.play();
 
+    srand(time(nullptr));
+
     GameLoop();
 }
 
@@ -46,11 +48,15 @@ void Tetris::GameLoop() {
     line.setPosition(400, 0);
     line.setFillColor(sf::Color::Red);
 
+    StonesVec.push_back(firstStone);
+
     while (window.isOpen()) {
 
-        time = clock.getElapsedTime().asSeconds();
+        timex = clock.getElapsedTime().asSeconds();
         clock.restart();
-        timer+=time;
+        timer+=timex;
+
+        int element = StonesVec.size();
 
         sf::Event event;
 
@@ -60,30 +66,86 @@ void Tetris::GameLoop() {
 
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Up){
-                    Stone.rotate();
+                    StonesVec[element-1].rotate();
                 }else if (event.key.code == sf::Keyboard::Left){
-                    Stone.move(-1);
+                    StonesVec[element-1].move(-1);
                 }else if (event.key.code == sf::Keyboard::Right){
-                    Stone.move(1);
+                    StonesVec[element-1].move(1);
                 }
             }
         }
 
-        timer = Stone.down(timer, delay);
+        CreateNewStone();
 
         window.clear(sf::Color::White);
         window.draw(line);
-        for (int i = 0; i < 4; i++){
-            s.setPosition(Stone.a[i].x * 40, Stone.a[i].y * 40);
-            window.draw(s);
-        }
-
-
-        /*for (int i = 0; i < 18; i++){
-            for (int j = 0; j < 10; j++){
-
+        for (int j = 0; j < StonesVec.size(); j++) {
+            for (int i = 0; i < 4; i++) {
+                s.setPosition(StonesVec[j].a[i].x * 40, StonesVec[j].a[i].y * 40);
+                window.draw(s);
             }
-        }*/
+        }
         window.display();
     }
+}
+
+bool Tetris::CheckBottom() {
+    int Collision = 0;
+
+    for (int i = 0; i < 4; i++){
+        if (StonesVec[StonesVec.size()-1].a[i].y >= 17){
+            Collision++;
+        }else {
+            for (int i = 0; i < 4; i++){
+                if (PlayingField[StonesVec[StonesVec.size()-1].a[i].y+1][StonesVec[StonesVec.size()-1].a[i].x]){
+                    Collision++;
+                }
+            }
+        }
+    }
+    if (Collision != 0){
+        check = true;
+    }else {
+        check = false;
+    }
+
+    return check;
+}
+
+void Tetris::CreateNewStone() {
+
+    if (!CheckBottom()) {
+        timer = StonesVec[StonesVec.size()-1].down(timer, delay);
+    }else {
+        for (int i = 0; i < 4; i++){
+            PlayingField[StonesVec[StonesVec.size()-1].a[i].y][StonesVec[StonesVec.size()-1].a[i].x] = true;
+        }
+        check = false;
+        //TetrisDebug();
+        int Random = RandomGen();
+        Stones NewStone = Stones(Random);
+        s.setTextureRect(sf::IntRect((Random%5)*40,0,40,40));
+        StonesVec.push_back(NewStone);
+    }
+}
+
+void Tetris::TetrisDebug(){
+    for (int i = 0; i < 18; i++){
+        for (int j = 0; j < 10; j++){
+            std::cout << PlayingField[i][j];
+        }
+        std::cout << std::endl;
+    }
+    int t = 1;
+    while (t != 0){
+        t++;
+    }
+}
+
+int Tetris::RandomGen() {
+    int RandomNumber;
+
+    RandomNumber = rand() % 7;
+
+    return RandomNumber;
 }

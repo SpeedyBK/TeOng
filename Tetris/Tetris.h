@@ -31,6 +31,8 @@ public:
 
     void GameLoop();
 
+    void CheckLines();
+
 private:
 
     int width;

@@ -7,6 +7,8 @@
 
 Stones::Stones() = default;
 
+Stones::~Stones() = default;
+
 Stones::Stones(int Stonetype){
     start = 4;
 

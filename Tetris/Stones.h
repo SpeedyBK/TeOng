@@ -10,6 +10,7 @@ class Stones {
 public:
 
     Stones();
+    ~Stones();
     explicit Stones(int Stonetype);
     void rotate ();
     void move(int lr);

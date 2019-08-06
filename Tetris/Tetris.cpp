@@ -128,6 +128,8 @@ void Tetris::CreateNewStone() {
         Stones NewStone = Stones(Random);
         StonesVec.push_back(NewStone);
         RandVec.push_back(Random);
+        CheckLines();
+        TetrisDebug();
     }
 }
 
@@ -150,4 +152,37 @@ int Tetris::RandomGen() {
     RandomNumber = rand() % 7;
 
     return RandomNumber;
+}
+
+void Tetris::CheckLines() {
+
+    int checksum = 0;
+
+    for(int i = 18; i >= 0; --i){
+        for (int j = 0; j < 10; j++){
+            if (PlayingField[i][j]){
+                checksum++;
+            }
+        }
+        if (checksum == 10){
+            // Zeile Löschen
+            // Alles oberhalb der Zeile eins nach unten;
+
+            for (int f = i; f >= 0; f--) {
+                for (int j = 0; j < 10; j++) {
+                    PlayingField[f][j] = PlayingField[f - 1][j];
+                }
+            }
+            for (int g = 0; g < StonesVec.size(); g++){
+                for (int h = 0; h < 4; h++){
+                    if (StonesVec[g].a[h].y <= i){
+                        StonesVec[g].a[h].y++;
+                    }
+                }
+            }
+
+            i++;
+        }
+        checksum = 0;
+    }
 }

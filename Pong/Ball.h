@@ -25,6 +25,7 @@ public:
 
 private:
 
+    bool HitFlag;
     int hits;
     int HitType;
     int PosX;

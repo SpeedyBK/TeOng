@@ -140,10 +140,7 @@ void Tetris::TetrisDebug(){
         }
         std::cout << std::endl;
     }
-    int t = 1;
-    while (t != 0){
-        t++;
-    }
+    std::cout << std::endl;
 }
 
 int Tetris::RandomGen() {
@@ -165,10 +162,8 @@ void Tetris::CheckLines() {
             }
         }
         if (checksum == 10){
-            // Zeile Löschen
-            // Alles oberhalb der Zeile eins nach unten;
 
-            for (int f = i; f >= 0; f--) {
+            for (int f = i; f > 0; f--) {
                 for (int j = 0; j < 10; j++) {
                     PlayingField[f][j] = PlayingField[f - 1][j];
                 }
@@ -185,4 +180,5 @@ void Tetris::CheckLines() {
         }
         checksum = 0;
     }
+    std::cout << StonesVec.size() << " Stone Objects.." << std::endl;
 }

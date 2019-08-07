@@ -15,6 +15,8 @@ public:
     void rotate ();
     void move(int lr);
     float down(float timer, float delay);
+    void AddIncrement();
+    int GetIncrement();
 
 
     struct Stone {
@@ -34,6 +36,8 @@ private:
                             };
 
     int start;
+
+    int increment = 0;
 
 };
 

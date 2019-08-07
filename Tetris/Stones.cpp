@@ -57,3 +57,7 @@ float Stones::down(float timer, float delay) {
     }
     return timer;
 }
+
+void Stones::AddIncrement() { increment++; }
+
+int Stones::GetIncrement() { return increment; }

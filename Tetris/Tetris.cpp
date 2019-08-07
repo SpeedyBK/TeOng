@@ -72,6 +72,10 @@ void Tetris::GameLoop() {
                     StonesVec[element-1].move(-1);
                 }else if (event.key.code == sf::Keyboard::Right){
                     StonesVec[element-1].move(1);
+                }else if (event.key.code == sf::Keyboard::P){
+                    delay = 10000000.f;
+                }else if (event.key.code == sf::Keyboard::U){
+                    delay = 0.5f;
                 }
             }
         }
@@ -176,7 +180,7 @@ void Tetris::CheckLines() {
                 }
             }
 
-            i++;
+            i=18;
         }
         checksum = 0;
     }

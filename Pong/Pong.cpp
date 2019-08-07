@@ -63,7 +63,7 @@ void Pong::GameLoop() {
         racketB.calcPosition();
         RacketA.setPosition(10, racketA.getPosition());
         RacketB.setPosition(width - 30, racketB.getPosition());
-        ball.setHitType(Pong::DetectHit(ball.getXPos(), ball.getYPos(), racketA.getPosition(), racketB.getPosition()));
+        ball.setHitType(DetectHit(ball.getXPos(), ball.getYPos(), racketA.getPosition(), racketB.getPosition()));
 
         for (int i = 0; i < 2000000 - ball.gethits(); i++ ){}
     }
@@ -75,7 +75,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         ScoreA++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
         return 2;
-    }else if(X > 10 && X < 30 && Y > YPosA && Y < YPosA+10) {
+    }else if((X > 10) && (X < 30) && (Y > YPosA) && Y < (YPosA+10)) {
         sound.setBuffer(racket);
         sound.play();
         return 3;
@@ -116,7 +116,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         return 3;
     }else if (X >= width - 20){
-        ScoreA++;
+        ScoreB++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
         return 2;
     }else if (Y <= 0 || Y >= height - 20) {

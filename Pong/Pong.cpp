@@ -71,50 +71,102 @@ void Pong::GameLoop() {
 
 int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
 
+    static bool strangeHit = false;
+
     if (X <= 0){
         ScoreA++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
         return 2;
-    }else if((X > 10) && (X < 30) && (Y > YPosA) && Y < (YPosA+10)) {
+    }else if((X > 10) && (X < 30) && (Y >= YPosA-5) && Y < (YPosA+10)) {
         sound.setBuffer(racket);
         sound.play();
-        return 3;
-    }else if(X > width - 50 && X < width - 30 && Y > YPosB && Y < YPosB+10){
+        if (!strangeHit) {
+            strangeHit = true;
+            return 3;
+        }else{
+            return 0;
+        }
+    }else if(X > width - 50 && X < width - 30 && Y >= YPosB-5 && Y < YPosB+10){
         sound.setBuffer(racket);
         sound.play();
-        return 3;
-    }else if(X > 10 && X < 30 && Y >= YPosA + 10 && Y < YPosA + 20) {
+        if (!strangeHit) {
+            strangeHit = true;
+            return 3;
+        }else{
+            return 0;
+        }
+    }else if(X > 10 && X < 30 && Y >= YPosA + 10 && Y < YPosA + 15) {
         sound.setBuffer(racket);
         sound.play();
-        return 4;
-    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 10 && Y < YPosB + 20){
+        if (!strangeHit) {
+            strangeHit = true;
+            return 4;
+        }else{
+            return 0;
+        }
+    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 10 && Y < YPosB + 15){
         sound.setBuffer(racket);
         sound.play();
-        return 4;
-    }else if(X > 10 && X < 30 && Y >= YPosA + 20 && Y < YPosA + 50) {
+        if (!strangeHit) {
+            strangeHit = true;
+            return 4;
+        }else{
+            return 0;
+        }
+    }else if(X > 10 && X < 30 && Y >= YPosA + 15 && Y < YPosA + 55) {
         sound.setBuffer(racket);
         sound.play();
-        return 5;
-    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 20 && Y < YPosB + 50){
+        if (!strangeHit) {
+            strangeHit = true;
+            return 5;
+        }else{
+            return 0;
+        }
+    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 15 && Y < YPosB + 55){
         sound.setBuffer(racket);
         sound.play();
-        return 5;
-    }else if(X > 10 && X < 30 && Y >= YPosA + 50 && Y < YPosA + 60) {
+        if (!strangeHit) {
+            strangeHit = true;
+            return 5;
+        }else{
+            return 0;
+        }
+    }else if(X > 10 && X < 30 && Y >= YPosA + 55 && Y < YPosA + 60) {
         sound.setBuffer(racket);
         sound.play();
-        return 4;
-    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 50 && Y < YPosB + 60){
+        if (!strangeHit) {
+            strangeHit = true;
+            return 4;
+        }else{
+            return 0;
+        }
+    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 55 && Y < YPosB + 60){
         sound.setBuffer(racket);
         sound.play();
-        return 4;
-    }else if(X > 10 && X < 30 && Y >= YPosA + 60 && Y < YPosA + 70) {
+        if (!strangeHit) {
+            strangeHit = true;
+            return 4;
+        }else{
+            return 0;
+        }
+    }else if(X > 10 && X < 30 && Y >= YPosA + 60 && Y < YPosA + 75) {
         sound.setBuffer(racket);
         sound.play();
-        return 3;
-    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 60 && Y < YPosB + 70){
+        if (!strangeHit) {
+            strangeHit = true;
+            return 3;
+        }else{
+            return 0;
+        }
+    }else if(X > width - 50 && X < width - 30 && Y >= YPosB + 60 && Y < YPosB + 75){
         sound.setBuffer(racket);
         sound.play();
-        return 3;
+        if (!strangeHit) {
+            strangeHit = true;
+            return 3;
+        }else{
+            return 0;
+        }
     }else if (X >= width - 20){
         ScoreB++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
@@ -124,6 +176,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         return 1;
     }else{
+        strangeHit = false;
         return 0;
     }
 }

@@ -54,9 +54,13 @@ void Ball::CalcVelo() {
             break;
         case 4 :
             if (VelocityY <= 0){
-                VelocityY += 0.2f;
+                if (VelocityY < -1.2f) {
+                    VelocityY += 0.2f;
+                }
             }else{
-                VelocityY -= 0.2f;
+                if (VelocityY > 1.2f) {
+                    VelocityY -= 0.2f;
+                }
             }
             VelocityX = 0 - VelocityX;
             hits+=1000;

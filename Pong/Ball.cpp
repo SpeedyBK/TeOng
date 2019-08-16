@@ -38,6 +38,7 @@ void Ball::CalcVelo() {
             VelocityX = 1.f;
             PosX = 380;
             PosY = 280;
+            hits = 0;
             break;
         case 3 : // Hit Racket
             if (VelocityY <= 0){
@@ -50,7 +51,7 @@ void Ball::CalcVelo() {
                 }
             }
             VelocityX = 0 - VelocityX;
-            hits+=1000;
+            hits+=50000;
             break;
         case 4 :
             if (VelocityY <= 0){
@@ -63,11 +64,11 @@ void Ball::CalcVelo() {
                 }
             }
             VelocityX = 0 - VelocityX;
-            hits+=1000;
+            hits+=50000;
             break;
         case 5 :
             VelocityX = 0 - VelocityX;
-            hits+=1000;
+            hits+=50000;
             break;
         default:
             VelocityY = VelocityY;

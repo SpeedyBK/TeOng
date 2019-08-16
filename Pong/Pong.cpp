@@ -41,7 +41,6 @@ void Pong::GameLoop() {
     PlayBall.setFillColor(sf::Color::Green);
     PlayBall.setPosition(ball.getXPos(), ball.getYPos());
 
-
     while (window.isOpen())
     {
         sf::Event event;
@@ -64,6 +63,7 @@ void Pong::GameLoop() {
         RacketA.setPosition(10, racketA.getPosition());
         RacketB.setPosition(width - 30, racketB.getPosition());
         ball.setHitType(DetectHit(ball.getXPos(), ball.getYPos(), racketA.getPosition(), racketB.getPosition()));
+
 
         for (int i = 0; i < 2000000 - ball.gethits(); i++ ){}
     }

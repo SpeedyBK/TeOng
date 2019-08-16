@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp
+Ball.h
+/home/benjamin/CLionProjects/TeOng/Pong/Ball.h
+
 /home/benjamin/CLionProjects/TeOng/Pong/Ball.h
 iostream
 -

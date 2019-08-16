@@ -10,11 +10,13 @@ Stones::Stones() = default;
 Stones::~Stones() = default;
 
 Stones::Stones(int Stonetype){
-    start = 4;
+    startx = 12;
+    starty = 3;
+
 
     for (int i = 0; i < 4; i++){
-        a[i].x = appearance[Stonetype][i] % 2 + start;
-        a[i].y = appearance[Stonetype][i] / 2;
+        a[i].x = appearance[Stonetype][i] % 2 + startx;
+        a[i].y = appearance[Stonetype][i] / 2 + starty;
     }
 }
 
@@ -61,3 +63,11 @@ float Stones::down(float timer, float delay) {
 void Stones::AddIncrement() { increment++; }
 
 int Stones::GetIncrement() { return increment; }
+
+void Stones::setPosition(int X, int Y) {
+
+    for (int i = 0; i < 4; i++){
+        a[i].x += X;
+        a[i].y += Y;
+    }
+}

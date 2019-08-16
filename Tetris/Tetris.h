@@ -43,6 +43,7 @@ private:
     bool check = false;
 
     Stones firstStone = Stones(1);
+    Stones secondStone = Stones(2);
     std::vector<Stones> StonesVec;
 
     std::vector <int> RandVec;

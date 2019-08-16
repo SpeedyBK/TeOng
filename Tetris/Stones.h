@@ -15,6 +15,7 @@ public:
     void rotate ();
     void move(int lr);
     float down(float timer, float delay);
+    void setPosition(int X, int Y);
     void AddIncrement();
     int GetIncrement();
 
@@ -35,7 +36,8 @@ private:
                              {2, 3, 4, 5}, // O
                             };
 
-    int start;
+    int startx;
+    int starty;
 
     int increment = 0;
 

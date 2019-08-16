@@ -8,7 +8,7 @@
 Tetris::Tetris(){
     std::cout << "Tetris is running... " << std::endl;
 
-    width = 600;
+    width = 640;
     height = 800;
 
     std::cout << "Creating Playing Field... " << std::endl;
@@ -45,10 +45,15 @@ void Tetris::GameLoop() {
 
     sf::RenderWindow window(sf::VideoMode(width, height), "Tetris!");
     sf::RectangleShape line(sf::Vector2f(5, 800));
+    sf::RectangleShape lineHor(sf::Vector2f(640, 5));
     line.setPosition(400, 0);
+    lineHor.setPosition(0, 720);
     line.setFillColor(sf::Color::Red);
+    lineHor.setFillColor(sf::Color::Red);
 
     StonesVec.push_back(firstStone);
+    StonesVec.push_back(secondStone);
+    StonesVec[0].setPosition(-8, -3);
     RandVec.push_back(4);
 
     while (window.isOpen()) {
@@ -67,15 +72,17 @@ void Tetris::GameLoop() {
 
             if (event.type == sf::Event::KeyPressed) {
                 if (event.key.code == sf::Keyboard::Up){
-                    StonesVec[element-1].rotate();
+                    StonesVec[element-2].rotate();
                 }else if (event.key.code == sf::Keyboard::Left){
-                    StonesVec[element-1].move(-1);
+                    StonesVec[element-2].move(-1);
                 }else if (event.key.code == sf::Keyboard::Right){
-                    StonesVec[element-1].move(1);
+                    StonesVec[element-2].move(1);
                 }else if (event.key.code == sf::Keyboard::P){
                     delay = 10000000.f;
                 }else if (event.key.code == sf::Keyboard::U){
                     delay = 0.5f;
+                }else if (event.key.code == sf::Keyboard::Down){
+                    delay = 0.05f;
                 }
             }
         }
@@ -84,11 +91,14 @@ void Tetris::GameLoop() {
 
         window.clear(sf::Color::White);
         window.draw(line);
+        window.draw(lineHor);
         for (int j = 0; j < StonesVec.size(); j++) {
             for (int i = 0; i < 4; i++) {
-                s.setPosition(StonesVec[j].a[i].x * 40, StonesVec[j].a[i].y * 40);
-                s.setTextureRect(sf::IntRect((RandVec[j]%5)*40,0,40,40));
-                window.draw(s);
+                if (StonesVec[j].a[i].y <= 17) {
+                    s.setPosition(StonesVec[j].a[i].x * 40, StonesVec[j].a[i].y * 40);
+                    s.setTextureRect(sf::IntRect((RandVec[j] % 5) * 40, 0, 40, 40));
+                    window.draw(s);
+                }
             }
         }
         window.display();
@@ -99,11 +109,11 @@ bool Tetris::CheckBottom() {
     int Collision = 0;
 
     for (int i = 0; i < 4; i++){
-        if (StonesVec[StonesVec.size()-1].a[i].y >= 17){
+        if (StonesVec[StonesVec.size()-2].a[i].y >= 17){
             Collision++;
         }else {
             for (int i = 0; i < 4; i++){
-                if (PlayingField[StonesVec[StonesVec.size()-1].a[i].y+1][StonesVec[StonesVec.size()-1].a[i].x]){
+                if (PlayingField[StonesVec[StonesVec.size()-2].a[i].y+1][StonesVec[StonesVec.size()-2].a[i].x]){
                     Collision++;
                 }
             }
@@ -111,6 +121,7 @@ bool Tetris::CheckBottom() {
     }
     if (Collision != 0){
         check = true;
+        delay = 0.5f;
     }else {
         check = false;
     }
@@ -121,16 +132,17 @@ bool Tetris::CheckBottom() {
 void Tetris::CreateNewStone() {
 
     if (!CheckBottom()) {
-        timer = StonesVec[StonesVec.size()-1].down(timer, delay);
+        timer = StonesVec[StonesVec.size()-2].down(timer, delay);
     }else {
         for (int i = 0; i < 4; i++){
-            PlayingField[StonesVec[StonesVec.size()-1].a[i].y][StonesVec[StonesVec.size()-1].a[i].x] = true;
+            PlayingField[StonesVec[StonesVec.size()-2].a[i].y][StonesVec[StonesVec.size()-2].a[i].x] = true;
         }
         check = false;
         //TetrisDebug();
         int Random = RandomGen();
         Stones NewStone = Stones(Random);
         StonesVec.push_back(NewStone);
+        StonesVec[StonesVec.size()-2].setPosition(-8, -3);
         RandVec.push_back(Random);
         CheckLines();
         TetrisDebug();

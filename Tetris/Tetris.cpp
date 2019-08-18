@@ -2,6 +2,7 @@
 // Created by benjamin on 28.07.19.
 //
 
+#include <string.h>
 #include "Tetris.h"
 
 
@@ -17,6 +18,8 @@ Tetris::Tetris(){
             PlayingField[i][j] = false;
         }
     }
+
+    points = 0;
 
     std::cout << "Loading Textures... " << std::endl;
 
@@ -37,6 +40,15 @@ Tetris::Tetris(){
     music.play();
 
     srand(time(nullptr));
+
+    sf::Font MyFont;
+
+    if (!MyFont.loadFromFile("../Fonts/arial.ttf"))
+    {
+        throw std::exception();
+    }
+
+    Score = sf::Text("Score: " + std::to_string(points), MyFont);
 
     GameLoop();
 }
@@ -101,6 +113,10 @@ void Tetris::GameLoop() {
                 }
             }
         }
+        Score.setString("Score: " + std::to_string(points));
+        Score.setFillColor(sf::Color::Blue);
+        Score.setPosition(460, 600);
+        window.draw(Score);
         window.display();
     }
 }
@@ -120,6 +136,7 @@ bool Tetris::CheckBottom() {
         }
     }
     if (Collision != 0){
+        points += 5;
         check = true;
         delay = 0.5f;
     }else {
@@ -142,9 +159,9 @@ void Tetris::CreateNewStone() {
         int Random = RandomGen();
         Stones NewStone = Stones(Random);
         StonesVec.push_back(NewStone);
-        StonesVec[StonesVec.size()-2].setPosition(-8, -3);
         RandVec.push_back(Random);
         CheckLines();
+        StonesVec[StonesVec.size()-2].setPosition(-8, -3);
         TetrisDebug();
     }
 }
@@ -178,7 +195,7 @@ void Tetris::CheckLines() {
             }
         }
         if (checksum == 10){
-
+            points += 100;
             for (int f = i; f > 0; f--) {
                 for (int j = 0; j < 10; j++) {
                     PlayingField[f][j] = PlayingField[f - 1][j];

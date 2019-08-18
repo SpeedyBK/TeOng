@@ -38,6 +38,8 @@ private:
     int width;
     int height;
 
+    int points;
+
     bool PlayingField [18][10];
     int offset = 40;
     bool check = false;
@@ -52,6 +54,8 @@ private:
     sf::Sprite s;
 
     sf::Music music;
+
+    sf::Text Score;
 
     sf::Clock clock;
     float delay = 0.5f;

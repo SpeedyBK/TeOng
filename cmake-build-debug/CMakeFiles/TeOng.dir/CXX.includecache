@@ -6,32 +6,30 @@
 
 #IncludeRegexTransform: 
 
-/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp
-Ball.h
-/home/benjamin/CLionProjects/TeOng/Pong/Ball.h
+/home/benjamin/CLionProjects/TeOng/Tetris/Stones.h
 
-/home/benjamin/CLionProjects/TeOng/Pong/Ball.h
-iostream
+/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp
+string.h
 -
+Tetris.h
+/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h
 
-/home/benjamin/CLionProjects/TeOng/Pong/Pong.cpp
-Pong.h
-/home/benjamin/CLionProjects/TeOng/Pong/Pong.h
-
-/home/benjamin/CLionProjects/TeOng/Pong/Pong.h
+/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h
 iostream
--
-SFML/Graphics.hpp
 -
 SFML/Audio.hpp
 -
-Ball.h
-/home/benjamin/CLionProjects/TeOng/Pong/Ball.h
-Racket.h
-/home/benjamin/CLionProjects/TeOng/Pong/Racket.h
-
-/home/benjamin/CLionProjects/TeOng/Pong/Racket.h
+SFML/Graphics.hpp
+-
 SFML/Window.hpp
+-
+Stones.h
+/home/benjamin/CLionProjects/TeOng/Tetris/Stones.h
+time.h
+-
+stdio.h
+-
+stdlib.h
 -
 
 /home/benjamin/sfml/include/SFML/Audio.hpp

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Ball.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Pong/Pong.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Pong.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Pong/Racket.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Racket.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/Schach/Schach.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Schach/Schach.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/main.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/main.cpp.o"

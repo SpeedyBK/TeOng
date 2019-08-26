@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/TeOng.dir/Pong/Ball.cpp.o"
   "CMakeFiles/TeOng.dir/Pong/Racket.cpp.o"
   "CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o"
+  "CMakeFiles/TeOng.dir/Schach/Schach.cpp.o"
   "TeOng.pdb"
   "TeOng"
 )

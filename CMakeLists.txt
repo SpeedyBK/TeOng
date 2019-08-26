@@ -18,6 +18,6 @@ if(SFML_FOUND)
     message(STATUS "SFML_VERSION: ${SFML_VERSION}")
 endif()
 
-add_executable(TeOng main.cpp Pong/Pong.cpp Pong/Pong.h Tetris/Tetris.cpp Tetris/Tetris.h Pong/Ball.cpp Pong/Ball.h Pong/Racket.cpp Pong/Racket.h Tetris/Stones.cpp Tetris/Stones.h)
+add_executable(TeOng main.cpp Pong/Pong.cpp Pong/Pong.h Tetris/Tetris.cpp Tetris/Tetris.h Pong/Ball.cpp Pong/Ball.h Pong/Racket.cpp Pong/Racket.h Tetris/Stones.cpp Tetris/Stones.h Schach/Schach.cpp Schach/Schach.h)
 
 target_link_libraries (TeOng sfml-graphics sfml-audio sfml-window sfml-system)

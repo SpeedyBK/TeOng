@@ -204,6 +204,33 @@ Pong/Racket.cpp.s:
 	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Pong/Racket.cpp.s
 .PHONY : Pong/Racket.cpp.s
 
+Schach/Schach.o: Schach/Schach.cpp.o
+
+.PHONY : Schach/Schach.o
+
+# target to build an object file
+Schach/Schach.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Schach/Schach.cpp.o
+.PHONY : Schach/Schach.cpp.o
+
+Schach/Schach.i: Schach/Schach.cpp.i
+
+.PHONY : Schach/Schach.i
+
+# target to preprocess a source file
+Schach/Schach.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Schach/Schach.cpp.i
+.PHONY : Schach/Schach.cpp.i
+
+Schach/Schach.s: Schach/Schach.cpp.s
+
+.PHONY : Schach/Schach.s
+
+# target to generate assembly for a file
+Schach/Schach.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Schach/Schach.cpp.s
+.PHONY : Schach/Schach.cpp.s
+
 Tetris/Stones.o: Tetris/Stones.cpp.o
 
 .PHONY : Tetris/Stones.o
@@ -303,6 +330,9 @@ help:
 	@echo "... Pong/Racket.o"
 	@echo "... Pong/Racket.i"
 	@echo "... Pong/Racket.s"
+	@echo "... Schach/Schach.o"
+	@echo "... Schach/Schach.i"
+	@echo "... Schach/Schach.s"
 	@echo "... Tetris/Stones.o"
 	@echo "... Tetris/Stones.i"
 	@echo "... Tetris/Stones.s"

@@ -6,30 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/home/benjamin/CLionProjects/TeOng/Tetris/Stones.h
-
-/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp
-string.h
--
-Tetris.h
-/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h
-
-/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h
+/home/benjamin/CLionProjects/TeOng/Schach/Schach.cpp
 iostream
 -
+Schach.h
+/home/benjamin/CLionProjects/TeOng/Schach/Schach.h
+
+/home/benjamin/CLionProjects/TeOng/Schach/Schach.h
 SFML/Audio.hpp
 -
 SFML/Graphics.hpp
 -
 SFML/Window.hpp
 -
-Stones.h
-/home/benjamin/CLionProjects/TeOng/Tetris/Stones.h
-time.h
--
-stdio.h
--
-stdlib.h
+string
 -
 
 /home/benjamin/sfml/include/SFML/Audio.hpp

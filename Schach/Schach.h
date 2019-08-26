@@ -5,6 +5,7 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
+#include <string>
 
 #ifndef TEONG_SCHACH_H
 #define TEONG_SCHACH_H
@@ -16,12 +17,28 @@ public:
 
     Schach();
 
+    void getInfos();
+
     void GameLoop();
 
 private:
 
     int width;
     int height;
+
+    int NumberOfPlayers;
+    int StoneColor;
+
+    sf::Texture Board;
+    sf::Texture Figures;
+
+    sf::Sprite sBoard;
+
+    sf::Text PlayerA;
+    sf::Text PlayerB;
+
+    std::string NameA;
+    std::string NameB;
 
 };
 

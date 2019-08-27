@@ -6,6 +6,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <string>
+#include <unistd.h>
+
 
 #ifndef TEONG_SCHACH_H
 #define TEONG_SCHACH_H
@@ -36,9 +38,18 @@ private:
 
     sf::Text PlayerA;
     sf::Text PlayerB;
-
     std::string NameA;
     std::string NameB;
+
+    sf::Clock clockA;
+    sf::Clock clockB;
+    int minA;
+    int minB;
+    int secA = 00;
+    int secB = 00;
+    sf::Text PlayerAClock;
+    sf::Text PlayerBClock;
+
 
 };
 

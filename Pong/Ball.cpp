@@ -51,7 +51,7 @@ void Ball::CalcVelo() {
                 }
             }
             VelocityX = 0 - VelocityX;
-            hits+=50000;
+            hits+=1000;
             break;
         case 4 :
             if (VelocityY <= 0){
@@ -64,11 +64,11 @@ void Ball::CalcVelo() {
                 }
             }
             VelocityX = 0 - VelocityX;
-            hits+=50000;
+            hits+=1000;
             break;
         case 5 :
             VelocityX = 0 - VelocityX;
-            hits+=50000;
+            hits+=1000;
             break;
         default:
             VelocityY = VelocityY;

@@ -29,6 +29,8 @@ Pong::Pong(){
         std::cout << "Problem with Sound File - Racket!" << std::endl;
     }
 
+    sleeptime = 10000;
+
     GameLoop();
 }
 
@@ -64,8 +66,7 @@ void Pong::GameLoop() {
         RacketB.setPosition(width - 30, racketB.getPosition());
         ball.setHitType(DetectHit(ball.getXPos(), ball.getYPos(), racketA.getPosition(), racketB.getPosition()));
 
-
-        for (int i = 0; i < 2000000 - ball.gethits(); i++ ){}
+        usleep(sleeptime);
     }
 }
 
@@ -76,12 +77,14 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
     if (X <= 0){
         ScoreA++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
+        sleeptime = 10000;
         return 2;
     }else if((X > 10) && (X < 30) && (Y >= YPosA-5) && Y < (YPosA+10)) {
         sound.setBuffer(racket);
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 3;
         }else{
             return 0;
@@ -91,6 +94,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 3;
         }else{
             return 0;
@@ -100,6 +104,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 4;
         }else{
             return 0;
@@ -109,6 +114,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 4;
         }else{
             return 0;
@@ -118,6 +124,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 5;
         }else{
             return 0;
@@ -127,6 +134,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 5;
         }else{
             return 0;
@@ -136,6 +144,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 4;
         }else{
             return 0;
@@ -145,6 +154,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 4;
         }else{
             return 0;
@@ -154,6 +164,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 3;
         }else{
             return 0;
@@ -163,6 +174,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         sound.play();
         if (!strangeHit) {
             strangeHit = true;
+            calcSleepTime();
             return 3;
         }else{
             return 0;
@@ -170,6 +182,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
     }else if (X >= width - 20){
         ScoreB++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
+        sleeptime = 10000;
         return 2;
     }else if (Y <= 0 || Y >= height - 20) {
         sound.setBuffer(wall);
@@ -180,3 +193,20 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
         return 0;
     }
 }
+
+void Pong::calcSleepTime() {
+
+    if (sleeptime > 5000) {
+        sleeptime -= 1000;
+    }else if (sleeptime > 1000){
+        sleeptime -= 200;
+    }else if (sleeptime > 250){
+        sleeptime -= 100;
+    }else if (sleeptime > 10){
+        sleeptime -= 10;
+    }else {
+        sleeptime = 1;
+    }
+
+}
+

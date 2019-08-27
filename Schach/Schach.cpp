@@ -36,6 +36,11 @@ Schach::Schach() {
     PlayerA.setFillColor(sf::Color::White);
     PlayerB.setFillColor(sf::Color::White);
 
+    PlayerAClock = sf::Text(std::to_string(minA) + ":" + std::to_string(secA), MyFont);
+    PlayerAClock.setPosition(875.f, 650.f);
+    PlayerBClock = sf::Text(std::to_string(minB) + ":" + std::to_string(secB), MyFont);
+    PlayerBClock.setPosition(875.f, 150.f);
+
     GameLoop();
 }
 
@@ -56,7 +61,10 @@ void Schach::GameLoop() {
         window.draw(sBoard);
         window.draw(PlayerA);
         window.draw(PlayerB);
+        window.draw(PlayerAClock);
+        window.draw(PlayerBClock);
         window.display();
+        usleep(10000);
     }
 
 
@@ -86,7 +94,13 @@ void Schach::getInfos() {
             std::cin >> NameB;
             NameA = "Stockfish";
         }
-
+    }else if (NumberOfPlayers == 0){
+        NameB = "Stockfish";
+        NameA = "Stockfish";
     }
+
+    std::cout << "Waehlen sie die Spielzeit in Minuten:" << std::endl;
+    std::cin >> minA;
+    minB = minA;
 
 }

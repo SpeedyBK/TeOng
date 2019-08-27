@@ -5,8 +5,10 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
+#include <unistd.h>
 #include "Ball.h"
 #include "Racket.h"
+
 
 #ifndef TEONG_PONG_H
 #define TEONG_PONG_H
@@ -19,6 +21,8 @@ public:
     Pong();
 
     void GameLoop();
+
+    void calcSleepTime();
 
     int DetectHit(int X, int Y, int YPosA, int YPosB);
 
@@ -35,6 +39,7 @@ private:
     int height;
     int ScoreA;
     int ScoreB;
+    int sleeptime;
 
 };
 

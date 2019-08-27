@@ -31,6 +31,12 @@ public:
 
 private:
 
+    bool onMove = false;
+    float dx = 0;
+    float dy = 0;
+
+    int m =0;
+
     int size = (int) 80;
 
     int ChessBoard[8][8] = {{-1, -2, -3, -4, -5, -3, -2, -1},

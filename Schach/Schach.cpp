@@ -61,10 +61,38 @@ void Schach::GameLoop() {
     while (window.isOpen())
     {
         sf::Event event;
+
+        sf::Vector2i pos = sf::Mouse::getPosition(window);
+        std::cout << "X: " << pos.x << "Y: " << pos.y << std::endl;
+
+        //45 - 755
+
         while (window.pollEvent(event))
         {
-            if (event.type == sf::Event::Closed)
+            if (event.type == sf::Event::Closed) {
                 window.close();
+            }
+
+            if (event.type == sf::Event::MouseButtonPressed){
+                if (event.mouseButton.button == sf::Mouse::Left){
+                    for (int i = 0; i < 32; i++) {
+                        if (sFigure[i].getGlobalBounds().contains(pos.x, pos.y)) {
+                            onMove = true;
+                            m = i;
+                            dx = pos.x - sFigure[i].getPosition().x;
+                            dy = pos.y - sFigure[i].getPosition().y;
+                        }
+                    }
+                }
+            }
+
+            if (event.type == sf::Event::MouseButtonReleased){
+                onMove = false;
+                sf::Vector2f p = sFigure[m].getPosition() + sf::Vector2f(size/2, size/2);
+                sf::Vector2f newPos = sf::Vector2f(90 * int ((p.x)/90)-45, 90 * int ((p.y)/90)-45); //ToDo..
+                sFigure[m].setPosition(newPos);
+            }
+
         }
 
         float timer = clock.getElapsedTime().asSeconds();
@@ -74,6 +102,10 @@ void Schach::GameLoop() {
             clockFunction(true, 1);
             timeDisplay();
             time = 0;
+        }
+
+        if (onMove){
+            sFigure[m].setPosition(pos.x-dx, pos.y-dx);
         }
 
         window.clear();

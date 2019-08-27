@@ -21,6 +21,8 @@ SFML/Window.hpp
 -
 string
 -
+unistd.h
+-
 
 /home/benjamin/sfml/include/SFML/Audio.hpp
 SFML/System.hpp

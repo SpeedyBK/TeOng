@@ -17,10 +17,14 @@ Schach::Schach() {
         std::cout << "Problem loading textures!" << std::endl;
     }
 
+    if (!Figures.loadFromFile("../Textures/figures.png")){
+        std::cout << "Problem loading Figures!" << std::endl;
+    }
+
+    sf::Sprite fTemp(Figures);
+
     sf::Sprite sTemp(Board);
     sBoard = sTemp;
-
-    sf::Font MyFont;
 
     if (!MyFont.loadFromFile("../Fonts/arial.ttf"))
     {
@@ -36,17 +40,23 @@ Schach::Schach() {
     PlayerA.setFillColor(sf::Color::White);
     PlayerB.setFillColor(sf::Color::White);
 
-    PlayerAClock = sf::Text(std::to_string(minA) + ":" + std::to_string(secA), MyFont);
-    PlayerAClock.setPosition(875.f, 650.f);
-    PlayerBClock = sf::Text(std::to_string(minB) + ":" + std::to_string(secB), MyFont);
-    PlayerBClock.setPosition(875.f, 150.f);
+    timeDisplay();
+
+    for (int i = 0; i < 32; i++){
+        sFigure[i].setTexture(Figures);
+    }
+
+    loadPosition();
 
     GameLoop();
 }
 
 void Schach::GameLoop() {
 
+    std::cout << "Entering Game Loop" << std::endl;
+
     sf::RenderWindow window(sf::VideoMode(width, height), "Chess!");
+
 
     while (window.isOpen())
     {
@@ -57,8 +67,20 @@ void Schach::GameLoop() {
                 window.close();
         }
 
+        float timer = clock.getElapsedTime().asSeconds();
+        clock.restart();
+        time += timer;
+        if (time > delay){
+            clockFunction(true, 1);
+            timeDisplay();
+            time = 0;
+        }
+
         window.clear();
         window.draw(sBoard);
+        for (auto &it : sFigure){
+            window.draw(it);
+        }
         window.draw(PlayerA);
         window.draw(PlayerB);
         window.draw(PlayerAClock);
@@ -100,7 +122,56 @@ void Schach::getInfos() {
     }
 
     std::cout << "Waehlen sie die Spielzeit in Minuten:" << std::endl;
-    std::cin >> minA;
-    minB = minA;
+    std::cin >> secA;
+    secA *= 60;
+    secB = secA;
+
+}
+
+void Schach::timeDisplay() {
+
+    int MinutesA = (int) secA / 60;
+    int MinutesB = (int) secB / 60;
+
+    int SecondsA = secA % 60;
+    int SecondsB = secB % 60;
+
+    SecondsA < 10 ? PlayerAClock = sf::Text(std::to_string(MinutesA) + ":0" + std::to_string(SecondsA), MyFont) : PlayerAClock = sf::Text(std::to_string(MinutesA) + ":" + std::to_string(SecondsA), MyFont);
+    SecondsB < 10 ? PlayerBClock = sf::Text(std::to_string(MinutesB) + ":0" + std::to_string(SecondsB), MyFont) : PlayerAClock = sf::Text(std::to_string(MinutesB) + ":" + std::to_string(SecondsB), MyFont);
+
+    PlayerAClock.setPosition(875.f, 650.f);
+    PlayerBClock.setPosition(875.f, 150.f);
+
+}
+
+void Schach::clockFunction(bool Player, int time) {
+
+    if (Player){
+        secA -= time;
+    }else{
+        secB -= time;
+    }
+}
+
+void Schach::loadPosition() {
+
+    int k = 0;
+    int n = 0;
+    int x;
+    int y;
+
+    for (int i = 0; i < 8; i++){
+        for (int j = 0; j < 8; j++){
+            n = ChessBoard[j][i];
+            if (n == 0){
+                continue;
+            }
+            x = abs(n)-1;
+            n > 0 ? y = 1 : y = 0;
+            sFigure[k].setTextureRect(sf::IntRect(size*x, size*y, size, size));
+            sFigure[k].setPosition(size*i + i*9 + 53, size*j + j*9 + 48);
+            k++;
+        }
+    }
 
 }

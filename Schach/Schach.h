@@ -23,7 +23,24 @@ public:
 
     void GameLoop();
 
+    void timeDisplay();
+
+    void clockFunction(bool Player, int time);
+
+    void loadPosition();
+
 private:
+
+    int size = (int) 80;
+
+    int ChessBoard[8][8] = {{-1, -2, -3, -4, -5, -3, -2, -1},
+                            {-6, -6, -6, -6, -6, -6, -6, -6},
+                            { 0,  0,  0,  0,  0,  0,  0,  0},
+                            { 0,  0,  0,  0,  0,  0,  0,  0},
+                            { 0,  0,  0,  0,  0,  0,  0,  0},
+                            { 0,  0,  0,  0,  0,  0,  0,  0},
+                            { 6,  6,  6,  6,  6,  6,  6,  6},
+                            { 1,  2,  3,  4,  5,  3,  2,  1}};;
 
     int width;
     int height;
@@ -35,16 +52,18 @@ private:
     sf::Texture Figures;
 
     sf::Sprite sBoard;
+    sf::Sprite sFigure[32];
 
     sf::Text PlayerA;
     sf::Text PlayerB;
     std::string NameA;
     std::string NameB;
 
-    sf::Clock clockA;
-    sf::Clock clockB;
-    int minA;
-    int minB;
+    sf::Font MyFont;
+
+    sf::Clock clock;
+    float time;
+    float delay = 1.0f;
     int secA = 00;
     int secB = 00;
     sf::Text PlayerAClock;

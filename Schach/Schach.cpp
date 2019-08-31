@@ -9,7 +9,7 @@ Schach::Schach() {
 
     std::cout << "Chess startet..." << std::endl;
     width = 1100;
-    height = 800;
+    height = 756;
 
     std::cout << "Loading textures..." << std::endl;
 
@@ -63,7 +63,7 @@ void Schach::GameLoop() {
         sf::Event event;
 
         sf::Vector2i pos = sf::Mouse::getPosition(window);
-        std::cout << "X: " << pos.x << "Y: " << pos.y << std::endl;
+        std::cout << pos.x << " : " << pos.y << std::endl;
 
         //45 - 755
 
@@ -89,8 +89,10 @@ void Schach::GameLoop() {
             if (event.type == sf::Event::MouseButtonReleased){
                 onMove = false;
                 sf::Vector2f p = sFigure[m].getPosition() + sf::Vector2f(size/2, size/2);
-                sf::Vector2f newPos = sf::Vector2f(90 * int ((p.x)/90)-45, 90 * int ((p.y)/90)-45); //ToDo..
+                sf::Vector2f newPos = sf::Vector2f(85 * int ((p.x-45)/size) + 46, 85 * int ((p.y-45)/size) + 46); //ToDo..
                 sFigure[m].setPosition(newPos);
+                std::cout << "----------------------------" << std::endl;
+                std::cout << newPos.x << " : " << newPos.y << std::endl;
             }
 
         }
@@ -201,7 +203,7 @@ void Schach::loadPosition() {
             x = abs(n)-1;
             n > 0 ? y = 1 : y = 0;
             sFigure[k].setTextureRect(sf::IntRect(size*x, size*y, size, size));
-            sFigure[k].setPosition(size*i + i*9 + 53, size*j + j*9 + 48);
+            sFigure[k].setPosition((size+5)*i + 45, (size+5)*j + 45);
             k++;
         }
     }

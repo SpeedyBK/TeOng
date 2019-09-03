@@ -31,7 +31,7 @@ void GameSelect(int selector){
     }else if (selector == 2) {
         std::cout << "Running Tetris!" << std::endl;
         Tetris tetris;
-    }else if (selector == 3){
+    }else if (selector == 3) {
         std::cout << "Running Chess!" << std::endl;
         Schach schach;
     }else{

@@ -29,11 +29,16 @@ public:
 
     void loadPosition();
 
+    std::string toChessNotation(int oldPosX, int oldPoxY, int newPosX, int newPosY);
+
 private:
 
     bool onMove = false;
     float dx = 0;
     float dy = 0;
+
+    int oldPosX;
+    int oldPosY;
 
     int m =0;
 

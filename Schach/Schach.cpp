@@ -63,7 +63,7 @@ void Schach::GameLoop() {
         sf::Event event;
 
         sf::Vector2i pos = sf::Mouse::getPosition(window);
-        std::cout << pos.x << " : " << pos.y << std::endl;
+        //std::cout << pos.x << " : " << pos.y << std::endl;
 
         //45 - 755
 
@@ -81,18 +81,26 @@ void Schach::GameLoop() {
                             m = i;
                             dx = pos.x - sFigure[i].getPosition().x;
                             dy = pos.y - sFigure[i].getPosition().y;
+                            oldPosX = int (sFigure[i].getPosition().x - 45) / size;
+                            oldPosY = int (sFigure[i].getPosition().y - 45) / size;
                         }
                     }
                 }
             }
 
             if (event.type == sf::Event::MouseButtonReleased){
-                onMove = false;
-                sf::Vector2f p = sFigure[m].getPosition() + sf::Vector2f(size/2, size/2);
-                sf::Vector2f newPos = sf::Vector2f(85 * int ((p.x-45)/size) + 46, 85 * int ((p.y-45)/size) + 46); //ToDo..
-                sFigure[m].setPosition(newPos);
-                std::cout << "----------------------------" << std::endl;
-                std::cout << newPos.x << " : " << newPos.y << std::endl;
+                if (int (pos.x - 45)/size >= 0 && int (pos.x - 45)/size < 8 && int (pos.y - 45)/size >= 0 && int (pos.y - 45)/size < 8) {
+                    onMove = false;
+                    sf::Vector2f p = sFigure[m].getPosition() + sf::Vector2f(size / 2, size / 2);
+                    sf::Vector2f newPos = sf::Vector2f(85 * int((p.x - 45) / size) + 46,
+                                                       85 * int((p.y - 45) / size) + 46); //ToDo..
+
+                    std::cout << "----------------------------" << std::endl;
+                    std::cout << toChessNotation(int (oldPosX - 45)/size, int (oldPosY - 45)/size,
+                                                 int (newPos.x - 45)/size, int (newPos.y - 45)/size);
+                    sFigure[m].setPosition(newPos);
+                    std::cout << " >> X: " << int(p.x - 45) / size << "Y: " << int(p.y - 45) / size << std::endl;
+                }
             }
 
         }
@@ -208,4 +216,22 @@ void Schach::loadPosition() {
         }
     }
 
+}
+
+std::string Schach::toChessNotation(int oldPosX, int oldPosY, int newPosX, int newPosY) {
+
+    std::cout << std::endl << oldPosX << ", " << oldPosY << ", " << newPosX << ", " << newPosY << std::endl;
+
+    int revA = oldPosX;
+    int revB = 7 - oldPosY;
+    int revC = newPosX;
+    int revD = 7 - newPosY;
+
+    std::string s;
+    s+= char (revA+97);
+    s+= char (revB+49);
+    s+= char (revC+97);
+    s+= char (revD+49);
+
+    return s;
 }

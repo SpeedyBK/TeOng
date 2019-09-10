@@ -96,8 +96,8 @@ void Schach::GameLoop() {
                                                        85 * int((p.y - 45) / size) + 46); //ToDo..
 
                     std::cout << "----------------------------" << std::endl;
-                    std::cout << toChessNotation(int (oldPosX - 45)/size, int (oldPosY - 45)/size,
-                                                 int (newPos.x - 45)/size, int (newPos.y - 45)/size);
+                    std::cout << toChessNotation(oldPosX, oldPosY, int (newPos.x - 45)/size, int (newPos.y - 45)/size);
+                    takeFigure(newPos);
                     sFigure[m].setPosition(newPos);
                     std::cout << " >> X: " << int(p.x - 45) / size << "Y: " << int(p.y - 45) / size << std::endl;
                 }
@@ -215,15 +215,14 @@ void Schach::loadPosition() {
             k++;
         }
     }
-
 }
 
-std::string Schach::toChessNotation(int oldPosX, int oldPosY, int newPosX, int newPosY) {
+std::string Schach::toChessNotation(int OldPosX, int OldPosY, int newPosX, int newPosY) {
 
-    std::cout << std::endl << oldPosX << ", " << oldPosY << ", " << newPosX << ", " << newPosY << std::endl;
+    std::cout << std::endl << OldPosX << ", " << OldPosY << ", " << newPosX << ", " << newPosY << std::endl;
 
-    int revA = oldPosX;
-    int revB = 7 - oldPosY;
+    int revA = OldPosX;
+    int revB = 7 - OldPosY;
     int revC = newPosX;
     int revD = 7 - newPosY;
 
@@ -234,4 +233,14 @@ std::string Schach::toChessNotation(int oldPosX, int oldPosY, int newPosX, int n
     s+= char (revD+49);
 
     return s;
+}
+
+void Schach::takeFigure(sf::Vector2f Posi) {
+
+    for (auto &it : sFigure){
+        if (it.getPosition() == Posi){
+            std::cout << std::endl << "Taking Figure" << std::endl;
+            it.setPosition(1000, 400);
+        }
+    }
 }

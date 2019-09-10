@@ -29,7 +29,9 @@ public:
 
     void loadPosition();
 
-    std::string toChessNotation(int oldPosX, int oldPoxY, int newPosX, int newPosY);
+    std::string toChessNotation(int OldPosX, int OldPoxY, int newPosX, int newPosY);
+
+    void takeFigure(sf::Vector2f Posi);
 
 private:
 

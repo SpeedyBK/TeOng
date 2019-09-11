@@ -82,6 +82,9 @@ private:
     sf::Text PlayerAClock;
     sf::Text PlayerBClock;
 
+    int whiteTakes = 0;
+    int blackTakes = 0;
+
 
 };
 

@@ -240,7 +240,9 @@ void Schach::takeFigure(sf::Vector2f Posi) {
     for (auto &it : sFigure){
         if (it.getPosition() == Posi){
             std::cout << std::endl << "Taking Figure" << std::endl;
-            it.setPosition(1000, 400);
+            whiteTakes < 8 ? it.setPosition(800 + whiteTakes * 25 , 200) : it.setPosition(800 + (whiteTakes-8) * 25 , 240);
+            it.setScale(0.4, 0.4);
+            whiteTakes++;
         }
     }
 }

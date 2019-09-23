@@ -204,33 +204,6 @@ Pong/Racket.cpp.s:
 	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Pong/Racket.cpp.s
 .PHONY : Pong/Racket.cpp.s
 
-Schach/Schach.o: Schach/Schach.cpp.o
-
-.PHONY : Schach/Schach.o
-
-# target to build an object file
-Schach/Schach.cpp.o:
-	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Schach/Schach.cpp.o
-.PHONY : Schach/Schach.cpp.o
-
-Schach/Schach.i: Schach/Schach.cpp.i
-
-.PHONY : Schach/Schach.i
-
-# target to preprocess a source file
-Schach/Schach.cpp.i:
-	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Schach/Schach.cpp.i
-.PHONY : Schach/Schach.cpp.i
-
-Schach/Schach.s: Schach/Schach.cpp.s
-
-.PHONY : Schach/Schach.s
-
-# target to generate assembly for a file
-Schach/Schach.cpp.s:
-	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Schach/Schach.cpp.s
-.PHONY : Schach/Schach.cpp.s
-
 Tetris/Stones.o: Tetris/Stones.cpp.o
 
 .PHONY : Tetris/Stones.o
@@ -285,6 +258,222 @@ Tetris/Tetris.cpp.s:
 	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.s
 .PHONY : Tetris/Tetris.cpp.s
 
+chess/Bishop.o: chess/Bishop.cpp.o
+
+.PHONY : chess/Bishop.o
+
+# target to build an object file
+chess/Bishop.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Bishop.cpp.o
+.PHONY : chess/Bishop.cpp.o
+
+chess/Bishop.i: chess/Bishop.cpp.i
+
+.PHONY : chess/Bishop.i
+
+# target to preprocess a source file
+chess/Bishop.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Bishop.cpp.i
+.PHONY : chess/Bishop.cpp.i
+
+chess/Bishop.s: chess/Bishop.cpp.s
+
+.PHONY : chess/Bishop.s
+
+# target to generate assembly for a file
+chess/Bishop.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Bishop.cpp.s
+.PHONY : chess/Bishop.cpp.s
+
+chess/King.o: chess/King.cpp.o
+
+.PHONY : chess/King.o
+
+# target to build an object file
+chess/King.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/King.cpp.o
+.PHONY : chess/King.cpp.o
+
+chess/King.i: chess/King.cpp.i
+
+.PHONY : chess/King.i
+
+# target to preprocess a source file
+chess/King.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/King.cpp.i
+.PHONY : chess/King.cpp.i
+
+chess/King.s: chess/King.cpp.s
+
+.PHONY : chess/King.s
+
+# target to generate assembly for a file
+chess/King.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/King.cpp.s
+.PHONY : chess/King.cpp.s
+
+chess/Knight.o: chess/Knight.cpp.o
+
+.PHONY : chess/Knight.o
+
+# target to build an object file
+chess/Knight.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Knight.cpp.o
+.PHONY : chess/Knight.cpp.o
+
+chess/Knight.i: chess/Knight.cpp.i
+
+.PHONY : chess/Knight.i
+
+# target to preprocess a source file
+chess/Knight.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Knight.cpp.i
+.PHONY : chess/Knight.cpp.i
+
+chess/Knight.s: chess/Knight.cpp.s
+
+.PHONY : chess/Knight.s
+
+# target to generate assembly for a file
+chess/Knight.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Knight.cpp.s
+.PHONY : chess/Knight.cpp.s
+
+chess/Pawn.o: chess/Pawn.cpp.o
+
+.PHONY : chess/Pawn.o
+
+# target to build an object file
+chess/Pawn.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Pawn.cpp.o
+.PHONY : chess/Pawn.cpp.o
+
+chess/Pawn.i: chess/Pawn.cpp.i
+
+.PHONY : chess/Pawn.i
+
+# target to preprocess a source file
+chess/Pawn.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Pawn.cpp.i
+.PHONY : chess/Pawn.cpp.i
+
+chess/Pawn.s: chess/Pawn.cpp.s
+
+.PHONY : chess/Pawn.s
+
+# target to generate assembly for a file
+chess/Pawn.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Pawn.cpp.s
+.PHONY : chess/Pawn.cpp.s
+
+chess/Piece.o: chess/Piece.cpp.o
+
+.PHONY : chess/Piece.o
+
+# target to build an object file
+chess/Piece.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Piece.cpp.o
+.PHONY : chess/Piece.cpp.o
+
+chess/Piece.i: chess/Piece.cpp.i
+
+.PHONY : chess/Piece.i
+
+# target to preprocess a source file
+chess/Piece.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Piece.cpp.i
+.PHONY : chess/Piece.cpp.i
+
+chess/Piece.s: chess/Piece.cpp.s
+
+.PHONY : chess/Piece.s
+
+# target to generate assembly for a file
+chess/Piece.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Piece.cpp.s
+.PHONY : chess/Piece.cpp.s
+
+chess/Queen.o: chess/Queen.cpp.o
+
+.PHONY : chess/Queen.o
+
+# target to build an object file
+chess/Queen.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Queen.cpp.o
+.PHONY : chess/Queen.cpp.o
+
+chess/Queen.i: chess/Queen.cpp.i
+
+.PHONY : chess/Queen.i
+
+# target to preprocess a source file
+chess/Queen.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Queen.cpp.i
+.PHONY : chess/Queen.cpp.i
+
+chess/Queen.s: chess/Queen.cpp.s
+
+.PHONY : chess/Queen.s
+
+# target to generate assembly for a file
+chess/Queen.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Queen.cpp.s
+.PHONY : chess/Queen.cpp.s
+
+chess/Rook.o: chess/Rook.cpp.o
+
+.PHONY : chess/Rook.o
+
+# target to build an object file
+chess/Rook.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Rook.cpp.o
+.PHONY : chess/Rook.cpp.o
+
+chess/Rook.i: chess/Rook.cpp.i
+
+.PHONY : chess/Rook.i
+
+# target to preprocess a source file
+chess/Rook.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Rook.cpp.i
+.PHONY : chess/Rook.cpp.i
+
+chess/Rook.s: chess/Rook.cpp.s
+
+.PHONY : chess/Rook.s
+
+# target to generate assembly for a file
+chess/Rook.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/Rook.cpp.s
+.PHONY : chess/Rook.cpp.s
+
+chess/chess.o: chess/chess.cpp.o
+
+.PHONY : chess/chess.o
+
+# target to build an object file
+chess/chess.cpp.o:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/chess.cpp.o
+.PHONY : chess/chess.cpp.o
+
+chess/chess.i: chess/chess.cpp.i
+
+.PHONY : chess/chess.i
+
+# target to preprocess a source file
+chess/chess.cpp.i:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/chess.cpp.i
+.PHONY : chess/chess.cpp.i
+
+chess/chess.s: chess/chess.cpp.s
+
+.PHONY : chess/chess.s
+
+# target to generate assembly for a file
+chess/chess.cpp.s:
+	$(MAKE) -f CMakeFiles/TeOng.dir/build.make CMakeFiles/TeOng.dir/chess/chess.cpp.s
+.PHONY : chess/chess.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -330,15 +519,36 @@ help:
 	@echo "... Pong/Racket.o"
 	@echo "... Pong/Racket.i"
 	@echo "... Pong/Racket.s"
-	@echo "... Schach/Schach.o"
-	@echo "... Schach/Schach.i"
-	@echo "... Schach/Schach.s"
 	@echo "... Tetris/Stones.o"
 	@echo "... Tetris/Stones.i"
 	@echo "... Tetris/Stones.s"
 	@echo "... Tetris/Tetris.o"
 	@echo "... Tetris/Tetris.i"
 	@echo "... Tetris/Tetris.s"
+	@echo "... chess/Bishop.o"
+	@echo "... chess/Bishop.i"
+	@echo "... chess/Bishop.s"
+	@echo "... chess/King.o"
+	@echo "... chess/King.i"
+	@echo "... chess/King.s"
+	@echo "... chess/Knight.o"
+	@echo "... chess/Knight.i"
+	@echo "... chess/Knight.s"
+	@echo "... chess/Pawn.o"
+	@echo "... chess/Pawn.i"
+	@echo "... chess/Pawn.s"
+	@echo "... chess/Piece.o"
+	@echo "... chess/Piece.i"
+	@echo "... chess/Piece.s"
+	@echo "... chess/Queen.o"
+	@echo "... chess/Queen.i"
+	@echo "... chess/Queen.s"
+	@echo "... chess/Rook.o"
+	@echo "... chess/Rook.i"
+	@echo "... chess/Rook.s"
+	@echo "... chess/chess.o"
+	@echo "... chess/chess.i"
+	@echo "... chess/chess.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

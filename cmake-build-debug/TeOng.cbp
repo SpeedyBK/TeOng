@@ -106,12 +106,6 @@
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Racket.h">
 			<Option target="TeOng"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/Schach/Schach.cpp">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/Schach/Schach.h">
-			<Option target="TeOng"/>
-		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp">
 			<Option target="TeOng"/>
 		</Unit>
@@ -122,6 +116,54 @@
 			<Option target="TeOng"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Bishop.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/King.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/King.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Knight.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Knight.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pawn.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pawn.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Piece.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Piece.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Queen.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Queen.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Rook.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Rook.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/chess.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/chess.h">
 			<Option target="TeOng"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/main.cpp">

@@ -135,18 +135,109 @@ CMakeFiles/TeOng.dir/Tetris/Stones.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/Tetris/Stones.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp -o CMakeFiles/TeOng.dir/Tetris/Stones.cpp.s
 
-CMakeFiles/TeOng.dir/Schach/Schach.cpp.o: CMakeFiles/TeOng.dir/flags.make
-CMakeFiles/TeOng.dir/Schach/Schach.cpp.o: ../Schach/Schach.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TeOng.dir/Schach/Schach.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/Schach/Schach.cpp.o -c /home/benjamin/CLionProjects/TeOng/Schach/Schach.cpp
+CMakeFiles/TeOng.dir/chess/King.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/King.cpp.o: ../chess/King.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TeOng.dir/chess/King.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/King.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/King.cpp
 
-CMakeFiles/TeOng.dir/Schach/Schach.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/Schach/Schach.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/Schach/Schach.cpp > CMakeFiles/TeOng.dir/Schach/Schach.cpp.i
+CMakeFiles/TeOng.dir/chess/King.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/King.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/King.cpp > CMakeFiles/TeOng.dir/chess/King.cpp.i
 
-CMakeFiles/TeOng.dir/Schach/Schach.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/Schach/Schach.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/Schach/Schach.cpp -o CMakeFiles/TeOng.dir/Schach/Schach.cpp.s
+CMakeFiles/TeOng.dir/chess/King.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/King.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/King.cpp -o CMakeFiles/TeOng.dir/chess/King.cpp.s
+
+CMakeFiles/TeOng.dir/chess/Piece.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/Piece.cpp.o: ../chess/Piece.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TeOng.dir/chess/Piece.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/Piece.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/Piece.cpp
+
+CMakeFiles/TeOng.dir/chess/Piece.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/Piece.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/Piece.cpp > CMakeFiles/TeOng.dir/chess/Piece.cpp.i
+
+CMakeFiles/TeOng.dir/chess/Piece.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/Piece.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/Piece.cpp -o CMakeFiles/TeOng.dir/chess/Piece.cpp.s
+
+CMakeFiles/TeOng.dir/chess/Queen.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/Queen.cpp.o: ../chess/Queen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TeOng.dir/chess/Queen.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/Queen.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/Queen.cpp
+
+CMakeFiles/TeOng.dir/chess/Queen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/Queen.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/Queen.cpp > CMakeFiles/TeOng.dir/chess/Queen.cpp.i
+
+CMakeFiles/TeOng.dir/chess/Queen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/Queen.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/Queen.cpp -o CMakeFiles/TeOng.dir/chess/Queen.cpp.s
+
+CMakeFiles/TeOng.dir/chess/Bishop.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/Bishop.cpp.o: ../chess/Bishop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TeOng.dir/chess/Bishop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/Bishop.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp
+
+CMakeFiles/TeOng.dir/chess/Bishop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/Bishop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp > CMakeFiles/TeOng.dir/chess/Bishop.cpp.i
+
+CMakeFiles/TeOng.dir/chess/Bishop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/Bishop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp -o CMakeFiles/TeOng.dir/chess/Bishop.cpp.s
+
+CMakeFiles/TeOng.dir/chess/Knight.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/Knight.cpp.o: ../chess/Knight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TeOng.dir/chess/Knight.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/Knight.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/Knight.cpp
+
+CMakeFiles/TeOng.dir/chess/Knight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/Knight.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/Knight.cpp > CMakeFiles/TeOng.dir/chess/Knight.cpp.i
+
+CMakeFiles/TeOng.dir/chess/Knight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/Knight.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/Knight.cpp -o CMakeFiles/TeOng.dir/chess/Knight.cpp.s
+
+CMakeFiles/TeOng.dir/chess/Rook.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/Rook.cpp.o: ../chess/Rook.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TeOng.dir/chess/Rook.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/Rook.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/Rook.cpp
+
+CMakeFiles/TeOng.dir/chess/Rook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/Rook.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/Rook.cpp > CMakeFiles/TeOng.dir/chess/Rook.cpp.i
+
+CMakeFiles/TeOng.dir/chess/Rook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/Rook.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/Rook.cpp -o CMakeFiles/TeOng.dir/chess/Rook.cpp.s
+
+CMakeFiles/TeOng.dir/chess/Pawn.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/Pawn.cpp.o: ../chess/Pawn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TeOng.dir/chess/Pawn.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/Pawn.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/Pawn.cpp
+
+CMakeFiles/TeOng.dir/chess/Pawn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/Pawn.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/Pawn.cpp > CMakeFiles/TeOng.dir/chess/Pawn.cpp.i
+
+CMakeFiles/TeOng.dir/chess/Pawn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/Pawn.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/Pawn.cpp -o CMakeFiles/TeOng.dir/chess/Pawn.cpp.s
+
+CMakeFiles/TeOng.dir/chess/chess.cpp.o: CMakeFiles/TeOng.dir/flags.make
+CMakeFiles/TeOng.dir/chess/chess.cpp.o: ../chess/chess.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TeOng.dir/chess/chess.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TeOng.dir/chess/chess.cpp.o -c /home/benjamin/CLionProjects/TeOng/chess/chess.cpp
+
+CMakeFiles/TeOng.dir/chess/chess.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TeOng.dir/chess/chess.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/benjamin/CLionProjects/TeOng/chess/chess.cpp > CMakeFiles/TeOng.dir/chess/chess.cpp.i
+
+CMakeFiles/TeOng.dir/chess/chess.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TeOng.dir/chess/chess.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/benjamin/CLionProjects/TeOng/chess/chess.cpp -o CMakeFiles/TeOng.dir/chess/chess.cpp.s
 
 # Object files for target TeOng
 TeOng_OBJECTS = \
@@ -156,7 +247,14 @@ TeOng_OBJECTS = \
 "CMakeFiles/TeOng.dir/Pong/Ball.cpp.o" \
 "CMakeFiles/TeOng.dir/Pong/Racket.cpp.o" \
 "CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o" \
-"CMakeFiles/TeOng.dir/Schach/Schach.cpp.o"
+"CMakeFiles/TeOng.dir/chess/King.cpp.o" \
+"CMakeFiles/TeOng.dir/chess/Piece.cpp.o" \
+"CMakeFiles/TeOng.dir/chess/Queen.cpp.o" \
+"CMakeFiles/TeOng.dir/chess/Bishop.cpp.o" \
+"CMakeFiles/TeOng.dir/chess/Knight.cpp.o" \
+"CMakeFiles/TeOng.dir/chess/Rook.cpp.o" \
+"CMakeFiles/TeOng.dir/chess/Pawn.cpp.o" \
+"CMakeFiles/TeOng.dir/chess/chess.cpp.o"
 
 # External object files for target TeOng
 TeOng_EXTERNAL_OBJECTS =
@@ -167,14 +265,21 @@ TeOng: CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o
 TeOng: CMakeFiles/TeOng.dir/Pong/Ball.cpp.o
 TeOng: CMakeFiles/TeOng.dir/Pong/Racket.cpp.o
 TeOng: CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o
-TeOng: CMakeFiles/TeOng.dir/Schach/Schach.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/King.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/Piece.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/Queen.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/Bishop.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/Knight.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/Rook.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/Pawn.cpp.o
+TeOng: CMakeFiles/TeOng.dir/chess/chess.cpp.o
 TeOng: CMakeFiles/TeOng.dir/build.make
 TeOng: /home/benjamin/sfml/lib/libsfml-graphics.so.2.5.1
 TeOng: /home/benjamin/sfml/lib/libsfml-audio.so.2.5.1
 TeOng: /home/benjamin/sfml/lib/libsfml-window.so.2.5.1
 TeOng: /home/benjamin/sfml/lib/libsfml-system.so.2.5.1
 TeOng: CMakeFiles/TeOng.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TeOng"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable TeOng"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TeOng.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

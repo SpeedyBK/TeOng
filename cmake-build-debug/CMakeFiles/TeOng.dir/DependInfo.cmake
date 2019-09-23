@@ -7,9 +7,16 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Ball.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Pong/Pong.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Pong.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Pong/Racket.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Racket.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/Schach/Schach.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Schach/Schach.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Bishop.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/King.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/King.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/Knight.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Knight.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/Pawn.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Pawn.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/Piece.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Piece.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/Queen.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Queen.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/Rook.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Rook.cpp.o"
+  "/home/benjamin/CLionProjects/TeOng/chess/chess.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/chess.cpp.o"
   "/home/benjamin/CLionProjects/TeOng/main.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

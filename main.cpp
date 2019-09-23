@@ -2,7 +2,7 @@
 #include <iostream>
 #include "Pong/Pong.h"
 #include "Tetris/Tetris.h"
-#include "Schach/Schach.h"
+#include "chess/chess.h"
 
 void GameSelect(int selector);
 
@@ -33,7 +33,7 @@ void GameSelect(int selector){
         Tetris tetris;
     }else if (selector == 3) {
         std::cout << "Running Chess!" << std::endl;
-        Schach schach;
+        chess Chess;
     }else{
         std::cout << "Error: Type 1 for Pong, type 2 for Tetris or type 3 for Chess" << std::endl;
         std::cin >> selector;

@@ -7,6 +7,8 @@
 
 #include "SFML/Graphics.hpp"
 #include "SFML/Window.hpp"
+#include "Piece.h"
+#include <list>
 #include <iostream>
 
 
@@ -47,6 +49,8 @@ private:
      */
     void BoardRotate();
 
+    void BoardSetup();
+
     /*!
      * Backgound Texture;
      */
@@ -71,6 +75,11 @@ private:
      * Playing Field
      */
     std::vector <std::vector <int>> PlayingField;
+
+    /*!
+     * List of all the figures.
+     */
+    std::list <Piece*> figures;
 
 };
 

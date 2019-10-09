@@ -10,6 +10,12 @@
 
 class Bishop : public Piece{
 
+public:
+
+    Bishop(int positionX, int positionY, bool col);
+
+private:
+
 };
 
 

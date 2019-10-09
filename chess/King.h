@@ -10,6 +10,12 @@
 
 class King : public Piece{
 
+public:
+
+    King(int positionX, int positionY, bool col);
+
+private:
+
 };
 
 

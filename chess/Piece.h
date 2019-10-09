@@ -5,16 +5,31 @@
 #ifndef TEONG_PIECE_H
 #define TEONG_PIECE_H
 
+#include "SFML/Graphics.hpp"
+
 
 class Piece {
 
 public:
 
-    void setWhite(bool color) {this -> white = color;};
+    Piece();
+
+    void printOutDebug();
+
+
+
+protected:
+
+    int posX;
+    int posY;
+
+    bool color;
+
+    sf::Texture texture;
+    sf::Sprite sprite;
 
 private:
 
-    bool white;
 
 };
 

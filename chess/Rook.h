@@ -10,6 +10,12 @@
 
 class Rook : public Piece {
 
+public:
+
+    Rook(int positionX, int positionY, bool col);
+
+private:
+
 };
 
 

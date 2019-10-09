@@ -10,6 +10,12 @@
 
 class Pawn : public Piece {
 
+public:
+
+    Pawn(int positionX, int positionY, bool color);
+
+private:
+
 };
 
 

@@ -3,6 +3,13 @@
 //
 
 #include "chess.h"
+#include "Pawn.h"
+#include "Rook.h"
+#include "King.h"
+#include "Knight.h"
+#include "Bishop.h"
+#include "Queen.h"
+#include <cmath>
 
 chess::chess() {
     this -> height = 760;
@@ -16,15 +23,14 @@ chess::chess() {
         sf::Sprite sBoardTemp(BoardTexture);
         sBoard = sBoardTemp;
 
-        PlayingField[0] = { 2,  3,  4,  5,  6,  4,  3,  2};
-        PlayingField[1] = { 1,  1,  1,  1,  1,  1,  1,  1};
-        PlayingField[2] = { 0,  0,  0,  0,  0,  0,  0,  0};
-        PlayingField[3] = { 0,  0,  0,  0,  0,  0,  0,  0};
-        PlayingField[4] = { 0,  0,  0,  0,  0,  0,  0,  0};
-        PlayingField[5] = { 0,  0,  0,  0,  0,  0,  0,  0};
-        PlayingField[6] = {-1, -1, -1, -1, -1, -1, -1, -1};
-        PlayingField[7] = {-2, -3, -4, -5, -6, -4, -3, -2};
-
+        PlayingField.push_back({ 2,  3,  4,  5,  6,  4,  3,  2});
+        PlayingField.push_back({ 1,  1,  1,  1,  1,  1,  1,  1});
+        PlayingField.push_back({ 0,  0,  0,  0,  0,  0,  0,  0});
+        PlayingField.push_back({ 0,  0,  0,  0,  0,  0,  0,  0});
+        PlayingField.push_back({ 0,  0,  0,  0,  0,  0,  0,  0});
+        PlayingField.push_back({ 0,  0,  0,  0,  0,  0,  0,  0});
+        PlayingField.push_back({-1, -1, -1, -1, -1, -1, -1, -1});
+        PlayingField.push_back({-2, -3, -4, -5, -6, -4, -3, -2});
 
 
     }catch (int error){
@@ -34,6 +40,9 @@ chess::chess() {
         }
     }
 
+    BoardSetup();
+
+    std::cout << "Entering Gameloop" << std::endl;
     GameLoop();
 }
 
@@ -107,4 +116,50 @@ void chess::BoardRotate() {
             zIt *= -1;
         }
     }
+}
+
+void chess::BoardSetup() {
+
+    int indexX = 0;
+    int indexY = 0;
+    bool color = false;
+
+    for (auto &rIt : PlayingField){
+        for (auto &cIt : rIt){
+            if (cIt > 0){
+                color = true;
+            }else{
+                color = false;
+            }
+            if (abs(cIt) == 1){
+                auto Bauer = new Pawn(indexX, indexY, color);
+                figures.push_back(Bauer);
+                delete Bauer;
+            }else if (abs(cIt) == 2){
+                auto Turm = new Rook(indexX, indexY, color);
+                figures.push_back(Turm);
+                delete Turm;
+            }else if (abs(cIt) == 3){
+                auto Springer = new Knight(indexX, indexY, color);
+                figures.push_back(Springer);
+                delete Springer;
+            }else if (abs(cIt) == 4){
+                auto Laufer = new Bishop(indexX, indexY, color);
+                figures.push_back(Laufer);
+                delete Laufer;
+            }else if (abs(cIt) == 5){
+                auto Dame = new Queen(indexX, indexY, color);
+                figures.push_back(Dame);
+                delete Dame;
+            }else if (abs(cIt) == 6){
+                auto Koenig = new King(indexX, indexY, color);
+                figures.push_back(Koenig);
+                delete Koenig;
+            }
+            indexX++;
+        }
+        indexX = 0;
+        indexY++;
+    }
+
 }

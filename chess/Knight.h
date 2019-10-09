@@ -8,7 +8,13 @@
 
 #include "Piece.h"
 
-class Knight : public Piece{
+class Knight : public Piece {
+
+public:
+
+    Knight(int positionX, int positionY, bool col);
+
+private:
 
 };
 

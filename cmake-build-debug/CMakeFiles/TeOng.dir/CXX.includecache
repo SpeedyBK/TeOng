@@ -6,39 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp
-Bishop.h
-/home/benjamin/CLionProjects/TeOng/chess/Bishop.h
+/home/benjamin/CLionProjects/TeOng/chess/Piece.cpp
 iostream
 -
-
-/home/benjamin/CLionProjects/TeOng/chess/Bishop.h
-Piece.h
-/home/benjamin/CLionProjects/TeOng/chess/Piece.h
-
-/home/benjamin/CLionProjects/TeOng/chess/Knight.cpp
-Knight.h
-/home/benjamin/CLionProjects/TeOng/chess/Knight.h
-iostream
--
-
-/home/benjamin/CLionProjects/TeOng/chess/Knight.h
 Piece.h
 /home/benjamin/CLionProjects/TeOng/chess/Piece.h
 
 /home/benjamin/CLionProjects/TeOng/chess/Piece.h
 SFML/Graphics.hpp
 /home/benjamin/CLionProjects/TeOng/chess/SFML/Graphics.hpp
-
-/home/benjamin/CLionProjects/TeOng/chess/Rook.cpp
-Rook.h
-/home/benjamin/CLionProjects/TeOng/chess/Rook.h
-iostream
--
-
-/home/benjamin/CLionProjects/TeOng/chess/Rook.h
-Piece.h
-/home/benjamin/CLionProjects/TeOng/chess/Piece.h
 
 /home/benjamin/sfml/include/SFML/Config.hpp
 TargetConditionals.h

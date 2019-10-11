@@ -12,8 +12,6 @@ class Knight : public Piece {
 
 public:
 
-    Knight(int positionX, int positionY, bool col);
-
 private:
 
 };

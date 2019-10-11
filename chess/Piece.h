@@ -13,17 +13,19 @@ class Piece {
 public:
 
     Piece();
+    Piece(int PosiX, int PosiY);
+    ~Piece() = default;
 
     void printOutDebug();
 
-
+    sf::Sprite getSprite(){ return sprite; };
 
 protected:
 
     int posX;
     int posY;
 
-    bool color;
+    int color;
 
     sf::Texture texture;
     sf::Sprite sprite;

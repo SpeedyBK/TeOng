@@ -25,33 +25,6 @@ private:
     void GameLoop();
 
     /*!
-     * Just a convertion from the chess notation to screencoordinates.
-     * @param ChessCoordinates like E5 are used in the game.
-     * @return A sf::Vector2i with the screen coordinates.
-     */
-    sf::Vector2f to_ScreenCoordinates(std::pair <char, int> ChessCoordinates);
-
-    /*!
-     * Converts A = 1, B = 2, ..., H = 8.
-     * @param chessChar
-     * @return the corresponding integer Value.
-     */
-    int chessCharToInt (char chessChar);
-
-    /*!
-     * stopProgram runs an endless loop, until an 'E' is put in, then it breaks the loop and continues the
-     * programm.
-     */
-    void stopProgram();
-
-    /*!
-     * Multiplying the BoardMatrix with -1 to invert colors of the players.
-     */
-    void BoardRotate();
-
-    void BoardSetup();
-
-    /*!
      * Backgound Texture;
      */
     sf::Texture BoardTexture;

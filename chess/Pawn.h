@@ -12,7 +12,7 @@ class Pawn : public Piece {
 
 public:
 
-    Pawn(int positionX, int positionY, bool color);
+    Pawn(int positionX, int positionY, bool row, int col);
 
 private:
 

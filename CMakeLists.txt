@@ -29,6 +29,21 @@ add_executable(TeOng main.cpp
         Pong/Racket.h
         Tetris/Stones.cpp
         Tetris/Stones.h
-        chess/King.cpp chess/King.h chess/Piece.cpp chess/Piece.h chess/Queen.cpp chess/Queen.h chess/Bishop.cpp chess/Bishop.h chess/Knight.cpp chess/Knight.h chess/Rook.cpp chess/Rook.h chess/Pawn.cpp chess/Pawn.h chess/chess.cpp chess/chess.h)
+        chess/King.cpp
+        chess/King.h
+        chess/Piece.cpp
+        chess/Piece.h
+        chess/Queen.cpp
+        chess/Queen.h
+        chess/Bishop.cpp
+        chess/Bishop.h
+        chess/Knight.cpp
+        chess/Knight.h
+        chess/Rook.cpp
+        chess/Rook.h
+        chess/Pawn.cpp
+        chess/Pawn.h
+        chess/chess.cpp
+        chess/chess.h)
 
 target_link_libraries (TeOng sfml-graphics sfml-audio sfml-window sfml-system)

@@ -39,6 +39,8 @@ chess::chess() {
         }
     }
 
+    startPosition();
+
     std::cout << "Entering Gameloop" << std::endl;
     GameLoop();
 }
@@ -56,11 +58,58 @@ void chess::GameLoop() {
                 window.close();
         }
 
-        Piece Albert(300, 300);
-
         window.draw(sBoard);
-        window.draw(Albert.getSprite());
-
+        for (auto &it : figures) {
+            window.draw(it->getSprite());
+        }
         window.display();
     }
+}
+
+void chess::startPosition(){
+
+    int i = 0;
+    int j = 0;
+
+    for (auto &rIt : PlayingField){
+        for (auto &cIt : rIt){
+            if (abs(cIt) == 1){
+                if (cIt < 0) {
+                    auto pawn = new Pawn(j, i, 1);
+                    figures.push_back(pawn);
+                }else{
+                    auto pawn = new Pawn(j, i, 0);
+                    figures.push_back(pawn);
+                }
+            }else if (abs(cIt) == 2){
+                if (cIt < 0) {
+                    auto rook = new Rook(j, i, 1);
+                    figures.push_back(rook);
+                }else{
+                    auto rook = new Rook(j, i, 0);
+                    figures.push_back(rook);
+                }
+            }else if (abs(cIt) == 3){
+                if (cIt < 0) {
+                    auto knight = new Knight(j, i, 1);
+                    figures.push_back(knight);
+                }else{
+                    auto knight = new Knight(j, i, 0);
+                    figures.push_back(knight);
+                }
+            }else if (abs(cIt) == 4){
+                if (cIt < 0) {
+                    auto bishop = new Bishop(j, i, 1);
+                    figures.push_back(bishop);
+                }else{
+                    auto bishop = new Bishop(j, i, 0);
+                    figures.push_back(bishop);
+                }
+            }
+            j++;
+        }
+        j = 0;
+        i++;
+    }
+
 }

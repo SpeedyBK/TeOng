@@ -12,7 +12,7 @@ class Rook : public Piece {
 
 public:
 
-    Rook(int positionX, int positionY, bool row, int col);
+    Rook(int posX, int posY, int color);
 
 private:
 

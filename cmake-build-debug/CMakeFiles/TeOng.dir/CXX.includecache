@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/benjamin/CLionProjects/TeOng/chess/Piece.cpp
+/home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp
+Bishop.h
+/home/benjamin/CLionProjects/TeOng/chess/Bishop.h
 iostream
 -
+
+/home/benjamin/CLionProjects/TeOng/chess/Bishop.h
 Piece.h
 /home/benjamin/CLionProjects/TeOng/chess/Piece.h
 

@@ -12,6 +12,8 @@ class Knight : public Piece {
 
 public:
 
+    Knight(int posX, int posY, int color);
+
 private:
 
 };

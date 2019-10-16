@@ -12,7 +12,7 @@ class Bishop : public Piece{
 
 public:
 
-    Bishop(int positionX, int positionY, bool row, int col);
+    Bishop(int posX, int posY, int color);
 
 private:
 

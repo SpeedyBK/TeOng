@@ -25,6 +25,11 @@ private:
     void GameLoop();
 
     /*!
+     * Initialises the startposition for both Players.
+     */
+    void startPosition();
+
+    /*!
      * Backgound Texture;
      */
     sf::Texture BoardTexture;

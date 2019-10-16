@@ -12,7 +12,7 @@ class King : public Piece{
 
 public:
 
-    King(int positionX, int positionY, bool row, int col);
+    King(int posX, int posY, int color);
 
 private:
 

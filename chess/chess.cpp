@@ -105,6 +105,22 @@ void chess::startPosition(){
                     auto bishop = new Bishop(j, i, 0);
                     figures.push_back(bishop);
                 }
+            }else if (abs(cIt) == 5){
+                if (cIt < 0) {
+                    auto queen = new Queen(j, i, 1);
+                    figures.push_back(queen);
+                }else{
+                    auto queen = new Queen(j, i, 0);
+                    figures.push_back(queen);
+                }
+            }else if (abs(cIt) == 6){
+                if (cIt < 0) {
+                    auto king = new King(j, i, 1);
+                    figures.push_back(king);
+                }else{
+                    auto king = new King(j, i, 0);
+                    figures.push_back(king);
+                }
             }
             j++;
         }

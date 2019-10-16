@@ -12,7 +12,7 @@ class Queen : public Piece {
 
 public:
 
-    Queen(int positionX, int positionY, bool row, int col);
+    Queen(int posX, int posY, int color);
 
 private:
 

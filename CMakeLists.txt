@@ -29,20 +29,20 @@ add_executable(TeOng main.cpp
         Pong/Racket.h
         Tetris/Stones.cpp
         Tetris/Stones.h
-        chess/King.cpp
-        chess/King.h
+        chess/Pieces/King.cpp
+        chess/Pieces/King.h
         chess/Piece.cpp
         chess/Piece.h
-        chess/Queen.cpp
-        chess/Queen.h
-        chess/Bishop.cpp
-        chess/Bishop.h
-        chess/Knight.cpp
-        chess/Knight.h
-        chess/Rook.cpp
-        chess/Rook.h
-        chess/Pawn.cpp
-        chess/Pawn.h
+        chess/Pieces/Queen.cpp
+        chess/Pieces/Queen.h
+        chess/Pieces/Bishop.cpp
+        chess/Pieces/Bishop.h
+        chess/Pieces/Knight.cpp
+        chess/Pieces/Knight.h
+        chess/Pieces/Rook.cpp
+        chess/Pieces/Rook.h
+        chess/Pieces/Pawn.cpp
+        chess/Pieces/Pawn.h
         chess/chess.cpp
         chess/chess.h)
 

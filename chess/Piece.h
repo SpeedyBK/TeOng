@@ -20,6 +20,8 @@ public:
 
     sf::Sprite getSprite(){ return sprite; };
 
+    std::pair <int, int> getPosition();
+
 protected:
 
     int posX;

@@ -6,7 +6,7 @@
 #define TEONG_ROOK_H
 
 
-#include "Piece.h"
+#include "../Piece.h"
 
 class Rook : public Piece {
 

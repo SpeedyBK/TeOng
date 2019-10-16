@@ -3,12 +3,12 @@
 //
 
 #include "chess.h"
-#include "Pawn.h"
-#include "Rook.h"
-#include "King.h"
-#include "Knight.h"
-#include "Bishop.h"
-#include "Queen.h"
+#include "Pieces/Pawn.h"
+#include "Pieces/Rook.h"
+#include "Pieces/King.h"
+#include "Pieces/Knight.h"
+#include "Pieces/Bishop.h"
+#include "Pieces/Queen.h"
 #include <cmath>
 
 chess::chess() {
@@ -60,6 +60,7 @@ void chess::GameLoop() {
 
         window.draw(sBoard);
         for (auto &it : figures) {
+            std::cout << "X: " << it->getPosition().first << " Y: " << it->getPosition().second << std::endl;
             window.draw(it->getSprite());
         }
         window.display();

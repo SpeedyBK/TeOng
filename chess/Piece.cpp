@@ -46,3 +46,7 @@ Piece::Piece(int PosiX, int PosiY) {
     sprite.setPosition(posX, posY);
 
 }
+
+std::pair<int, int> Piece::getPosition() {
+    return std::make_pair(posX, posY);
+}

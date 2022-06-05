@@ -1,30 +1,28 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Ball.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/Pong/Pong.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Pong.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/Pong/Racket.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Pong/Racket.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Bishop.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/King.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/King.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/Knight.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Knight.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/Pawn.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Pawn.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/Piece.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Piece.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/Queen.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Queen.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/Rook.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/Rook.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/chess/chess.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/chess/chess.cpp.o"
-  "/home/benjamin/CLionProjects/TeOng/main.cpp" "/home/benjamin/CLionProjects/TeOng/cmake-build-debug/CMakeFiles/TeOng.dir/main.cpp.o"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../SFML_INCLUDE_DIR"
-  "/home/benjamin/sfml/include"
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp" "CMakeFiles/TeOng.dir/Pong/Ball.cpp.o" "gcc" "CMakeFiles/TeOng.dir/Pong/Ball.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/Pong/Pong.cpp" "CMakeFiles/TeOng.dir/Pong/Pong.cpp.o" "gcc" "CMakeFiles/TeOng.dir/Pong/Pong.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/Pong/PongAI.cpp" "CMakeFiles/TeOng.dir/Pong/PongAI.cpp.o" "gcc" "CMakeFiles/TeOng.dir/Pong/PongAI.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/Pong/Racket.cpp" "CMakeFiles/TeOng.dir/Pong/Racket.cpp.o" "gcc" "CMakeFiles/TeOng.dir/Pong/Racket.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/Tetris/Stones.cpp" "CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o" "gcc" "CMakeFiles/TeOng.dir/Tetris/Stones.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.cpp" "CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o" "gcc" "CMakeFiles/TeOng.dir/Tetris/Tetris.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/Piece.cpp" "CMakeFiles/TeOng.dir/chess/Piece.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/Piece.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/Pieces/Bishop.cpp" "CMakeFiles/TeOng.dir/chess/Pieces/Bishop.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/Pieces/Bishop.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/Pieces/King.cpp" "CMakeFiles/TeOng.dir/chess/Pieces/King.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/Pieces/King.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/Pieces/Knight.cpp" "CMakeFiles/TeOng.dir/chess/Pieces/Knight.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/Pieces/Knight.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/Pieces/Pawn.cpp" "CMakeFiles/TeOng.dir/chess/Pieces/Pawn.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/Pieces/Pawn.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/Pieces/Queen.cpp" "CMakeFiles/TeOng.dir/chess/Pieces/Queen.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/Pieces/Queen.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/Pieces/Rook.cpp" "CMakeFiles/TeOng.dir/chess/Pieces/Rook.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/Pieces/Rook.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/chess/chess.cpp" "CMakeFiles/TeOng.dir/chess/chess.cpp.o" "gcc" "CMakeFiles/TeOng.dir/chess/chess.cpp.o.d"
+  "/home/benjamin/CLionProjects/TeOng/main.cpp" "CMakeFiles/TeOng.dir/main.cpp.o" "gcc" "CMakeFiles/TeOng.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

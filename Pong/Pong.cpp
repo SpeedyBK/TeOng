@@ -3,6 +3,7 @@
 //
 
 #include "Pong.h"
+#include "PongAI.h"
 
 Pong::Pong(){
     std::cout << "Pong is running: " << std::endl;
@@ -36,6 +37,12 @@ Pong::Pong(){
 
 void Pong::GameLoop() {
 
+    auto AI = new PongAI;
+    int level;
+    std::cout << "Select your level : 1 = Noob, 10 = Insane" << std::endl;
+    std::cin >> level;
+    AI->setDifficulty(level);
+
     sf::RenderWindow window(sf::VideoMode(width, height), "Pong!");
     sf::CircleShape PlayBall(10.f);
     sf::RectangleShape RacketA(sf::Vector2f(20, 80));
@@ -61,12 +68,20 @@ void Pong::GameLoop() {
         ball.PosCalc();
         PlayBall.setPosition(ball.getXPos(), ball.getYPos());
         racketA.calcPosition();
-        racketB.calcPosition();
+        //racketA.setPosition(ball.getYPos()-5);
+        //racketB.calcPosition();
+
+        if(ball.getXPos() > 400) {
+            AI->setSP(ball.getYPos());
+            racketB.setPosition((int) AI->updatePID((float) racketB.getPosition()));
+        }
+
         RacketA.setPosition(10, racketA.getPosition());
         RacketB.setPosition(width - 30, racketB.getPosition());
         ball.setHitType(DetectHit(ball.getXPos(), ball.getYPos(), racketA.getPosition(), racketB.getPosition()));
 
         usleep(sleeptime);
+
     }
 }
 
@@ -75,7 +90,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
     static bool strangeHit = false;
 
     if (X <= 0){
-        ScoreA++;
+        ScoreB++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
         sleeptime = 10000;
         return 2;
@@ -180,7 +195,7 @@ int Pong::DetectHit(int X, int Y, int YPosA, int YPosB) {
             return 0;
         }
     }else if (X >= width - 20){
-        ScoreB++;
+        ScoreA++;
         std::cout << "Player A: " << ScoreA << " Player B: " << ScoreB << std::endl;
         sleeptime = 10000;
         return 2;

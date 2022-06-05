@@ -40,6 +40,11 @@ private:
     sf::Sprite sBoard;
 
     /*!
+     * Used for the Mouse as Input
+     */
+    sf::Mouse mouse;
+
+    /*!
      * Height of the boardtexture.
      */
     int height;

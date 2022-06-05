@@ -3,9 +3,9 @@ project(TeOng)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SFML_INCLUDE_DIR "/home/benjamin/sfml/include")
-set(SFML_LIBRARY_DIR "/home/benjamin/sfml/lib")
-set(SFML_DIR "/home/benjamin/sfml/lib/cmake/SFML")
+set(SFML_INCLUDE_DIR "/home/benjamin/Dependencies/sfml/include")
+set(SFML_LIBRARY_DIR "/home/benjamin/Dependencies/sfml/lib")
+set(SFML_DIR "/home/benjamin/Dependencies/sfml/lib/cmake/SFML")
 
 link_directories(SFML_LIBRARY_DIR)
 include_directories(SFML_INCLUDE_DIR)
@@ -21,6 +21,8 @@ endif()
 add_executable(TeOng main.cpp
         Pong/Pong.cpp
         Pong/Pong.h
+        Pong/PongAI.cpp
+        Pong/PongAI.h
         Tetris/Tetris.cpp
         Tetris/Tetris.h
         Pong/Ball.cpp

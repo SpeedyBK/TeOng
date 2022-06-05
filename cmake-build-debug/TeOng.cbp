@@ -5,13 +5,23 @@
 		<Option title="TeOng"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\sfml\;CMake Files\..\..\sfml\lib\;CMake Files\..\..\sfml\lib\cmake\;CMake Files\..\..\sfml\lib\cmake\SFML\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Dependencies\;CMake Files\..\..\Dependencies\sfml\;CMake Files\..\..\Dependencies\sfml\lib\;CMake Files\..\..\Dependencies\sfml\lib\cmake\;CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -35,7 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/benjamin/CLionProjects/TeOng/SFML_INCLUDE_DIR"/>
-					<Add directory="/home/benjamin/sfml/include"/>
+					<Add directory="/home/benjamin/Dependencies/sfml/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -60,7 +70,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/benjamin/CLionProjects/TeOng/SFML_INCLUDE_DIR"/>
-					<Add directory="/home/benjamin/sfml/include"/>
+					<Add directory="/home/benjamin/Dependencies/sfml/include"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
 					<Add directory="/usr/include/c++/7/backward"/>
@@ -77,16 +87,6 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/benjamin/CLionProjects/TeOng/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/benjamin/CLionProjects/TeOng/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 		</Build>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Ball.cpp">
 			<Option target="TeOng"/>
@@ -98,6 +98,12 @@
 			<Option target="TeOng"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Pong.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/PongAI.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/PongAI.h">
 			<Option target="TeOng"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Pong/Racket.cpp">
@@ -118,46 +124,46 @@
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/Tetris/Tetris.h">
 			<Option target="TeOng"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Bishop.cpp">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Bishop.h">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/King.cpp">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/King.h">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Knight.cpp">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Knight.h">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pawn.cpp">
-			<Option target="TeOng"/>
-		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pawn.h">
-			<Option target="TeOng"/>
-		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Piece.cpp">
 			<Option target="TeOng"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Piece.h">
 			<Option target="TeOng"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Queen.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Bishop.cpp">
 			<Option target="TeOng"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Queen.h">
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Bishop.h">
 			<Option target="TeOng"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Rook.cpp">
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/King.cpp">
 			<Option target="TeOng"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Rook.h">
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/King.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Knight.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Knight.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Pawn.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Pawn.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Queen.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Queen.h">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Rook.cpp">
+			<Option target="TeOng"/>
+		</Unit>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/Pieces/Rook.h">
 			<Option target="TeOng"/>
 		</Unit>
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/chess/chess.cpp">
@@ -172,20 +178,20 @@
 		<Unit filename="/home/benjamin/CLionProjects/TeOng/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../Dependencies/sfml/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLConfigDependencies.cmake">
-			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../Dependencies/sfml/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../Dependencies/sfml/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../Dependencies/sfml/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
-		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../sfml/lib/cmake/SFML/SFMLSharedTargets.cmake">
-			<Option virtualFolder="CMake Files\..\..\sfml\lib\cmake\SFML\"/>
+		<Unit filename="/home/benjamin/CLionProjects/TeOng/../../Dependencies/sfml/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\Dependencies\sfml\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

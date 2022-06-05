@@ -22,6 +22,8 @@ public:
 
     std::pair <int, int> getPosition();
 
+    std::pair <int, int> convertMousePosition(sf::Vector2i MPos);
+
 protected:
 
     int posX;

@@ -8,6 +8,7 @@ void GameSelect(int selector);
 
 int main()
 {
+    using namespace std;
     int selector = 0;
 
     std::cout << "Game Menu: " << std::endl;

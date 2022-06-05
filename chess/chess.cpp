@@ -48,6 +48,7 @@ chess::chess() {
 
 void chess::GameLoop() {
 
+    int t = 0;
     sf::RenderWindow window(sf::VideoMode(width, height), "Chess!");
     while(window.isOpen()){
 
@@ -60,10 +61,13 @@ void chess::GameLoop() {
 
         window.draw(sBoard);
         for (auto &it : figures) {
-            std::cout << "X: " << it->getPosition().first << " Y: " << it->getPosition().second << std::endl;
+            if (t == 0) {
+                std::cout << "X: " << it->getPosition().first << " Y: " << it->getPosition().second << std::endl;
+            }
             window.draw(it->getSprite());
         }
         window.display();
+        t = 1;
     }
 }
 

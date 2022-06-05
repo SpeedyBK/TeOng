@@ -50,3 +50,7 @@ Piece::Piece(int PosiX, int PosiY) {
 std::pair<int, int> Piece::getPosition() {
     return std::make_pair(posX, posY);
 }
+
+std::pair<int, int> Piece::convertMousePosition(sf::Vector2i MPos) {
+    return std::pair<int, int>();
+}

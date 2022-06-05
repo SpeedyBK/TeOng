@@ -5,7 +5,6 @@
 #include <string.h>
 #include "Tetris.h"
 
-
 Tetris::Tetris(){
     std::cout << "Tetris is running... " << std::endl;
 
